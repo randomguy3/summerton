@@ -77,9 +77,10 @@
  * Branding header.
  */
 
-#header {
-  position: absolute;
-  top: 0;
+.header {
+    background-color: $gwwcred;
+    padding-top:10px;
+    height: 75px;
 }
 
 /* Wrapping link for logo. */
@@ -139,6 +140,10 @@
  * Navigation bar.
  */
 #navigation {
+
+  background-color: white;
+  border-bottom: solid 5px $gwwcred;
+  text-align:center;
   /* Sometimes you want to prevent overlapping with main div. */
   /* overflow: hidden; */
 
@@ -153,19 +158,63 @@
 
   /* Main menu and secondary menu links and menu block links. */
   .links,
-  .menu {
+  .menu,
+  #main-menu {
     margin: 0;
     padding: 0;
-    text-align: left; /* LTR */
 
+    ul {
+      text-align:justify;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+    }
+
+    ul:after {
+      content: "";
+      display:inline-block;
+      width:100%;
+    }
+    
     li {
       /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
       padding: 0 10px 0 0; /* LTR */
       list-style-type: none;
       list-style-image: none;
+      display: inline-block;
+      text-align:justify;
+
+      .last {
+          float:right;
+      }
+      a {
+          color: $gwwcgray;
+          text-transform: uppercase;
+          text-align:center;
+          display:inline-block;
+      }
+
     }
   }
+  
+}
+
+#home__wideimage {
+    background-image: url('../images/custom/header.jpg');
+    width: 100%;
+    height: image-height('../images/custom/header.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+//    width: image-width('../images/custom/header.jpg');
+}
+
+div
+  .wideblock {
+    position:absolute;
+    left:0;
+    right:0;
+    background-color:red;
 }
 
 /**
@@ -810,6 +859,3 @@ tr.selected td {
     background-image: image-url("progress.gif");
   }
 }
-
-/* vim:sts=2:sw=2:et
-*/

@@ -1,4 +1,19 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\000032}}
+/* footer */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\000033}}
+#footer {
+  background: url("../images/page-backgrounds/footer-inner.png") repeat top left;
+  width: 980px;
+  /* padding included in internal sections, border outside */
+  padding: 22px 0 20px;
+  border: 1px solid #1d1d1a;
+  border-top: none;
+  border-bottom-left-radius: 6px;
+  /* NEEDS REPLACING - placeholder from Tom */
+  border-bottom-right-radius: 6px;
+  /* NEEDS REPLACING - placeholder from Tom */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000314}}
 .gwwc3footersitemapcolumn {
   border-right: 1px solid #252525;
   /* NEEDS REPLACING - placeholder from Tom */
@@ -8,12 +23,12 @@
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000322}}
 .gwwc3footersitemapcolumn.last {
   border-right: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000326}}
 .gwwc3footersitemapcolumn h2 {
   margin-top: 0;
   text-transform: uppercase;
@@ -23,18 +38,78 @@
   margin-bottom: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000335}}
 .gwwc3footersitemapcolumn a {
   color: #5b5850;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000339}}
 .gwwc3footersm {
   padding-right: 26px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000342}}
+.gwwc3footersm > #twitterbird {
+  background-image: url("../images/footer/greytweetbird.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: left;
+  margin-right: 6px;
+  height: 26px;
+  width: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000351}}
+.gwwc3footersm > #twitter {
+  background-image: url("../images/footer/posttwitterlogo.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: right;
+  margin-right: 6px;
+  height: 26px;
+  width: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000360}}
+.gwwc3footersm #facebook {
+  background-image: url("../images/footer/postfacebook.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: right;
+  margin-right: 6px;
+  height: 26px;
+  width: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000369}}
+.gwwc3footersm #youtube {
+  background-image: url("../images/footer/postyoutube.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: right;
+  margin-right: 6px;
+  height: 26px;
+  width: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000378}}
+.gwwc3footersm #google {
+  background-image: url("../images/footer/postgoogle.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: right;
+  margin-right: 6px;
+  height: 26px;
+  width: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000387}}
+.gwwc3footersm #pinterest {
+  background-image: url("../images/footer/postpinterest.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: right;
+  margin-right: 6px;
+  height: 26px;
+  width: 26px;
+}
 
 /* copyright */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003102}}
 #block-block-21 {
   text-align: center;
   color: #655d54;
@@ -42,7 +117,7 @@
 }
 
 /* Callout */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003110}}
 .callout {
   position: relative;
   margin: 10px 0 5px;
@@ -56,13 +131,13 @@
   width: 286px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003126}}
 .callout ul,
 .callout li {
   height: 100px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003131}}
 .callout .notch {
   position: absolute;
   top: 109px;
@@ -85,7 +160,7 @@
 }
 
 /* Background Color */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003153}}
 .tb2 {
   background-color: #580000;
   border: 1px solid #008000;
@@ -95,14 +170,14 @@
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003162}}
 .tb2 a {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003168}}
 .tweet {
   color: white;
   font-size: 0.75em;
@@ -116,13 +191,13 @@
   border-radius: 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003182}}
 .query {
   color: white;
   font-size: 0.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003187}}
 .tweet_list {
   list-style: none;
   margin: 0;
@@ -130,7 +205,7 @@
   overflow-y: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003194}}
 .tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
@@ -138,44 +213,44 @@
   list-style-type: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003201}}
 .tweet_list li a {
   color: #00FFFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003205}}
 .tweet_list .tweet_even {
   background-color: #404040;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003209}}
 .tweet_list .tweet_avatar {
   padding-right: .5em;
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003213}}
 .tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003217}}
 .tweet .tweet_list .tweet_time {
   display: block;
   padding-top: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003221}}
 .tweet .tweet_list .tweet_time a {
   color: black;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003225}}
 .tweet .tweet_list .tweet_text {
   line-height: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/gwwc3\.scss}line{font-family:\00003228}}
 #mediarbar {
   background-color: white;
   padding-left: 20px;

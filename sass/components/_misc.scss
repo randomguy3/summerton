@@ -77,11 +77,6 @@
  * Branding header.
  */
 
-#header {
-  position: absolute;
-  top: 0;
-}
-
 /* Wrapping link for logo. */
 .header__logo {
   float: left; /* LTR */
@@ -810,6 +805,3 @@ tr.selected td {
     background-image: image-url("progress.gif");
   }
 }
-
-/* vim:sts=2:sw=2:et
-*/

@@ -137,5 +137,42 @@ html,
   }
 }
 
+/**
+ * Footer
+ */
+#footer .menu-block-wrapper {
+  @include clearfix;
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+        list-style-image: none;
+    }
+    li.menu__item.expanded {
+      float: left;
+      padding-left: 2em;
+      padding-right: 2em;
+      border-left: groove $brand-grey-fg;
+      text-transform: uppercase;
+      a, a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul.menu {
+        li {
+          text-transform: lowercase;
+        }
+      }
+    }
+    li.menu__item.expanded.first {
+      padding-left: 0;
+      border-left: none;
+    }
+  }
+}
+
 /* vim:sts=2:sw=2:et
 */

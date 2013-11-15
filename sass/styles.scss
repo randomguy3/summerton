@@ -13,12 +13,13 @@
 @import "normalize";
 
 /* Layout rules */
-@import "layouts/responsive";
+@import "layouts/gwwc";
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
 // Optionally, add your own components here.
 @import "components/footernav";
+@import "components/page";
 
 @import "print";
 

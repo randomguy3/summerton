@@ -1,0 +1,84 @@
+/**
+ * @file
+ * Positioning for the Summerton GWWC layout.
+ */
+
+/* FIXME: sticky footer? seems to require a fixed height
+$footer-height: 10em;
+html, body {
+  height: 100%;
+}
+#page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto 0-$footer-height;
+}
+#footer, .push {
+  height: $footer-height;
+}
+*/
+
+/**
+ * Center content
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+.content-block {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-content-width;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#page-title {
+  display: none;
+}
+
+#header-container {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#header, #footer {
+  max-width: $max-content-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header {
+  @include clearfix
+}
+
+#footer-container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+$nav-border: 0.2em;
+@media all and (min-width: 535px) {
+  /* Extend header down to make room for nav */
+  #header {
+    padding-bottom: $nav-height + $nav-border;
+  }
+  #main {
+    position: relative;
+  }
+  #navigation {
+    /* Move the navbar up inside #main/#header's padding. */
+    position: absolute;
+    top: 0 - $nav-height - $nav-border;
+    height: $nav-height;
+    width: 100%;
+  }
+  #main-menu {
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* vim:sts=2:sw=2:et
+*/

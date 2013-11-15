@@ -86,7 +86,6 @@
 
   </div>
 
-  <div class="push"></div>
 </div>
 
 <?php print render($page['footer']); ?>

@@ -579,12 +579,7 @@ table {
 /* Layout rules */
 /**
  * @file
- * Positioning for a responsive layout.
- *
- * Define CSS classes to create a fluid grid layout with optional sidebars
- * depending on whether blocks are placed in the left or right sidebars.
- *
- * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ * Positioning for the Summerton GWWC layout.
  */
 /* FIXME: sticky footer? seems to require a fixed height
 $footer-height: 10em;
@@ -602,76 +597,79 @@ html, body {
 }
 */
 /**
- * Center the page.
+ * Center content
  *
  * For screen sizes larger than 1200px, prevent excessively long lines of text
  * by setting a max-width.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_responsive\.scss}line{font-family:\0000350}}
-#page,
-.region-bottom {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000328}}
+.content-block {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 70em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-/* Apply the shared properties of grid items in a single, efficient ruleset. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_responsive\.scss}line{font-family:\0000360}}
-#header,
-#content,
-#navigation,
-#footer {
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000336}}
+#page-title {
+  display: none;
 }
 
-/* Containers for grid items and flow items. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000346}}
-#header-container:before, #header-container:after,
-#main:before,
-#main:after,
-#footer-container:before,
-#footer-container:after {
-  content: "";
-  display: table;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000350}}
-#header-container:after,
-#main:after,
-#footer-container:after {
-  clear: both;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_responsive\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000340}}
 #header-container {
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
-  /* FIXME: move this */
-  background: #6c0000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_responsive\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000345}}
 #header, #footer {
-  max-width: 1200px;
+  max-width: 70em;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_responsive\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000350}}
+#header {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000354}}
 #footer-container {
   width: 100%;
   position: absolute;
   left: 0;
-  background: black;
 }
 
+@media all and (min-width: 535px) {
+  /* Extend header down to make room for nav */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000363}}
+  #header {
+    padding-bottom: 1.7em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000366}}
+  #main {
+    position: relative;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000369}}
+  #navigation {
+    /* Move the navbar up inside #main/#header's padding. */
+    position: absolute;
+    top: -1.7em;
+    height: 1.5em;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/layouts\/_gwwc\.scss}line{font-family:\0000376}}
+  #main-menu {
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* vim:sts=2:sw=2:et
 */
 /* Component (SMACSS module) rules */
@@ -1537,6 +1535,31 @@ tr.selected td {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/components\/_footernav\.scss}line{font-family:\000037}}
 #footer, #footer a, #footer a:visited {
   color: white;
+}
+
+/* vim:sts=2:sw=2:et
+*/
+/* Colours, typography etc for the page */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/components\/_page\.scss}line{font-family:\000033}}
+#page {
+  background: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/components\/_page\.scss}line{font-family:\000037}}
+#header-container {
+  background: #6c0000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/components\/_page\.scss}line{font-family:\0000310}}
+#navigation {
+  background: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/gwwc\/public_html\/sites\/all\/themes\/summerton\/sass\/components\/_page\.scss}line{font-family:\0000316}}
+body,
+html,
+#footer-container {
+  background: black;
 }
 
 /* vim:sts=2:sw=2:et

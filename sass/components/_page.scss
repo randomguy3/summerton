@@ -1,0 +1,21 @@
+/* Colours, typography etc for the page */
+
+#page {
+  background: white;
+}
+
+#header-container {
+  background: $gwwc-red;
+}
+#navigation {
+  background: white;
+}
+
+body,
+html,
+#footer-container {
+  background: black;
+}
+
+/* vim:sts=2:sw=2:et
+*/

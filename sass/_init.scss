@@ -44,7 +44,7 @@ $legacy-support-for-ie8: true;
 // Font faces, stacks and sizes.
 //
 
-$max-content-width: 70em;
+$max-content-width: 60em;
 
 // Compass' vertical_rhythm extension is a powerful tool to set up a vertical
 // rhythm for your entire page. You can see some of its mixins and functions in
@@ -86,9 +86,11 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
+$source-sans-pro: "Source Sans Pro", sans-serif;
+
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $verdana; // The font family set on the html element.
-$font-body:        $verdana;
+$base-font-family: $source-sans-pro; /* set on the html element */
+$font-body:        $source-sans-pro;
 $font-monospace:   $courier;
 
 
@@ -99,11 +101,14 @@ $font-monospace:   $courier;
 $gwwc-red: #6c0000;
 $gwwc-gray: #626262;
 
+$gwwcred: $gwwc-red;
+$gwwcgray: $gwwc-gray;
+
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
 
 // The height of the navigation container.
-$nav-height: 1.5em;
+$nav-height: 2em;
 // The height of the header.
 $header-height: 60px;
 
@@ -115,6 +120,9 @@ $tabs-border: #bbb;
 // =============================================================================
 // Partials to be shared with all .scss files.
 // =============================================================================
+
+// Add the Source Sans font from Google
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 
 // Add Compass' IE and vendor prefix support variables.
 @import "compass/support";

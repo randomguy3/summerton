@@ -57,10 +57,10 @@ html, body {
   left: 0;
 }
 
-$nav-border: 0.2em;
+$nav-border: 0.4em;
 @media all and (min-width: 535px) {
   /* Extend header down to make room for nav */
-  #header {
+  #header-container {
     padding-bottom: $nav-height + $nav-border;
   }
   #main {
@@ -72,6 +72,9 @@ $nav-border: 0.2em;
     top: 0 - $nav-height - $nav-border;
     height: $nav-height;
     width: 100%;
+    /* Prevents the links covering the main text if the min-width
+       argument for this section is wrong */
+    overflow: hidden;
   }
   #main-menu {
     max-width: $max-content-width;

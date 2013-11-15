@@ -86,7 +86,7 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
-$source-sans-pro: "Source Sans Pro", sans-serif;
+$source-sans-pro: "Source Sans Pro", Arial, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
 $base-font-family: $source-sans-pro; /* set on the html element */
@@ -98,9 +98,19 @@ $font-monospace:   $courier;
 // Colors, etc.
 //
 
-$gwwc-red: #6c0000;
-$gwwc-gray: #626262;
+// brand colours, taken from branding guidebook
+$brand-white-fg: white;
+$brand-red-bg: #6c0000;
+$brand-grey-fg: #c7c3c0;
+$brand-grey-bg: $brand-grey-fg;
+$brand-dark-grey-fg: #343434;
 
+// compat, misspellings etc.
+$brand-gray-fg: $brand-grey-fg;
+$brand-gray-bg: $brand-grey-bg;
+$brand-dark-gray-fg: $brand-dark-grey-fg;
+$gwwc-red: $brand-red-bg;
+$gwwc-gray: #626262;
 $gwwcred: $gwwc-red;
 $gwwcgray: $gwwc-gray;
 

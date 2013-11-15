@@ -108,7 +108,6 @@ regions[page_bottom]    = Page bottom
 
 features[] = logo
 features[] = name
-features[] = slogan
 features[] = node_user_picture
 features[] = comment_user_picture
 features[] = favicon

@@ -2443,25 +2443,161 @@ acronym {
   padding-left: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000312}}
-div .wideblock h2 {
-  color: #acacac;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\000035}}
+div.wideblock.even h2 {
+  color: #626262;
+  font-size: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\000039}}
+div.wideblock.even h3 {
+  color: #6c0000;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000315}}
+div.wideblock.odd h2 {
+  color: #626262;
+  font-size: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000319}}
+div.wideblock.odd h3 {
+  color: #626262;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000324}}
+div.wideblock p {
+  color: #626262;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000335}}
 h1.page__title {
   color: #6c0000;
   text-align: center;
   font-size: 40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000343}}
 div .field-item > h2 {
   color: #2c2c2c;
+  font-size: 32px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/fonts\.scss}line{font-family:\0000348}}
 div .field-item > p {
-  color: #acacac;
+  color: #626262;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/images\.scss}line{font-family:\000034}}
+#topcharitiesimg {
+  background-image: url("../images/wideblocks/charity_logos.png");
+  height: 269px;
+  width: 350px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/images\.scss}line{font-family:\0000316}}
+#waterkid {
+  background-image: url("../images/wideblocks/waterkid.png");
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/images\.scss}line{font-family:\0000321}}
+#CEAteam {
+  background-image: url("../images/wideblocks/CEAteam.png");
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/components\/images\.scss}line{font-family:\0000326}}
+#CEAteamb {
+  background-image: url("../images/wideblocks/CEAteamb.png");
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\000032}}
+.clearfix {
+  zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\000034}}
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000310}}
+.clearfix:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000314}}
+div .left {
+  float: left;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000320}}
+div .right {
+  float: right;
+  width: 800px;
+}
+
+/* For modern browsers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000332}}
+.container:before, div .wideblock:before,
+.container:after,
+div .wideblock:after {
+  content: "";
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000336}}
+.container:after, div .wideblock:after {
+  clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000340}}
+.container, div .wideblock {
+  zoom: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000345}}
+.justify {
+  text-align: justify;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000349}}
+.inline {
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000353}}
+.stretch {
+  width: 100%;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000361}}
+div.circular {
+  width: 260px;
+  height: 260px;
+  border-radius: 130px;
+  -webkit-border-radius: 130px;
+  -moz-border-radius: 130px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000374}}
+p.caption {
+  width: 260px;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/development\/gwwc\/givingwhatwecan\/sites\/all\/themes\/summerton\/sass\/layouts\/internal_layout\.scss}line{font-family:\0000379}}
+.tcenter {
+  text-align: center;
 }
 
 /* SMACSS theme rules */

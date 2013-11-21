@@ -1,0 +1,76 @@
+#home__wideimage {
+    background-image: url('../images/custom/header.jpg');
+    width: 100%;
+    height: image-height('../images/custom/header.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+//    width: image-width('../images/custom/header.jpg');
+}
+
+
+#home__wideimage2 {
+    background-image: url('../images/custom/header.jpg');
+    width: 100%;
+    height: image-height('../images/custom/header.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+//    width: image-width('../images/custom/header.jpg');
+}
+#topcharitiesimg {
+    $image : '../images/wideblocks/charity_logos.png';
+    background-image: url($image);
+//    width:320px;
+//    height: 320px;
+    height: image-height($image);
+    width: image-width($image);
+    display:inline-block;
+    background-repeat: no-repeat;
+}
+
+
+#waterkid {
+    background-image: url('../images/wideblocks/waterkid.png');
+    background-repeat: no-repeat;
+}
+
+#CEAteam {
+    background-image: url('../images/wideblocks/CEAteam.png');
+    background-repeat: no-repeat;
+}
+
+#CEAteamb {
+    background-image: url('../images/wideblocks/CEAteamb.png');
+    background-repeat: no-repeat;
+}
+
+    #guardian {
+        content: url("../images/mediabar/theguardianlogo.png");    
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 35px;
+    }
+    #BBC {
+        content: url("../images/mediabar/BBC NEWS LOGO.png");
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 35px;
+    }
+    #nyt {
+        content: url("../images/mediabar/New York Times logo.png");
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 35px;
+    }
+    #independent {
+        content: url("../images/mediabar/The independent logo.png");
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 35px;
+    }
+    #wsj {
+        content: url("../images/mediabar/the wall street journal logo.png");
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 35px;
+    }
+

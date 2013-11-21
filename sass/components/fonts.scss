@@ -1,0 +1,108 @@
+// PAGEBLOCKS
+
+div.wideblock {
+    &.even {
+        h2 {
+            color: $gwwcgrey; 
+            font-size: 40px;
+        }
+        h3 {
+            color: $gwwcred;
+            font-weight: bold;
+        }
+    }
+    &.odd {
+        background-color: $gwwclightgrey;
+        h2 {
+            color: $gwwcgrey;
+            font-size: 40px;
+        }
+        h3 {
+            color: $gwwcgrey;
+            font-weight: bold;
+        }
+    }
+    p {
+        color:$gwwcgrey;
+    }
+    label {
+        color:$gwwcred;
+    }
+
+    button.red {
+        background-color: $gwwcred;
+        color: white;
+        border-radius: 3px 3px 3px 3px;
+        color: white;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 24px;
+        height: 60px;
+        width: 300px;
+        padding: 5px 1em 0;
+        text-align: center;
+
+    }
+    button.white {
+        background-color: white;
+        color: $gwwcred;;
+        border-radius: 3px 3px 3px 3px;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 24px;
+        height: 60px;
+        width: 300px;
+        padding: 5px 1em 0;
+        text-align: center;
+
+    }
+
+}
+
+
+
+
+// MAIN CONTENT
+
+h1.page__title {
+    color: $gwwcred;
+    text-align:center;
+    font-size: 40px;
+}
+
+div .field-item {
+
+    > h2 {
+        color: $gwwcblack;
+        font-size: 32px;
+    }
+    
+    > p {
+        color: $gwwcgrey;   
+    }
+
+    .even {
+
+    }
+
+    .odd {
+
+    }
+
+}
+
+p.small {
+    font-size: 80%;
+}
+
+select {
+        color: $gwwcblack;
+        background-color: $gwwclightgrey;
+        border-color: $gwwclightgrey;
+}
+
+
+
+
+
+

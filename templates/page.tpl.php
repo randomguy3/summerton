@@ -100,6 +100,10 @@
         <?php endif; ?>
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
+
+        <div class="container">
+        <?php print render($page['footer']); ?>
+        </div>
     </div>
 
     <?php
@@ -116,9 +120,6 @@
     <?php endif; ?>
 
   </div>
-
-  <?php print render($page['footer']); ?>
-
 </div>
 
 <?php print render($page['bottom']); ?>

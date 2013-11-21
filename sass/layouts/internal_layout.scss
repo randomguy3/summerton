@@ -1,0 +1,123 @@
+
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+div .left {
+    float:left;
+    display:inline-block;
+    
+}
+
+div .right {
+    float:right;
+    width: 800px;
+}
+
+div .wideblock {
+//    overflow:auto;
+    @extend .container;
+    padding: 40px 0px 40px 0;
+
+}
+
+
+
+
+
+/* For modern browsers */
+.container:before,
+.container:after {
+    content:"";
+    display:table;
+}
+.container:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.container {
+    zoom:1;
+//    text-align: justify;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.stretch {
+    width: 100%;
+    display:inline-block;
+}
+
+
+$radius: 260px;
+
+div.circular {
+    width:$radius;
+    height:$radius;
+    border-radius: $radius/2;
+    -webkit-border-radius: $radius/2;
+    -moz-border-radius: $radius/2;;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    margin-bottom: 20px;
+
+}
+
+p.caption {
+    width:$radius;
+    text-align: center;
+}
+
+
+.tcenter {
+    text-align: center;
+}
+
+p.inline {
+    display:inline;
+}
+
+// FORMS
+
+input {
+    &.short {
+        width: 20px;
+    }
+    &.long {
+        width: 60px;
+    }
+}
+
+div#email-signup {
+        height: 50px;
+        padding: 5px;
+        p {
+            line-height: 25px;
+            float:left;
+            display:inline;
+        }
+
+        display:inline-block;
+        button {
+            display:inline;
+        }
+        form {
+
+        }
+
+}
+

@@ -1,0 +1,7 @@
+<ul class="social-media-links">
+<li><a class="facebook first" href="http://www.facebook.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Facebook'])">Facebook</a></li>
+<li><a class="twitter" href="http://twitter.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Twitter'])">Twitter</a></li>
+<li><a class="google" href="https://plus.google.com/102902731488831445362/about" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Google Plus'])">Google Plus</a></li>
+<li><a class="pinterest" href="http://pinterest.com/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Pinterest'])">Pinterest</a></li>
+<li><a class="youtube last" href="http://www.youtube.com/user/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'YouTube'])">YouTube</a></li>
+</ul>

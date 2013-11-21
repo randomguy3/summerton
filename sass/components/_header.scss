@@ -62,16 +62,20 @@
   display: none;
 }
 
-
-/* The secondary menu (login, etc.) */
-.header__secondary-menu {
-  float: right; /* LTR */
-}
-
 /* Wrapper for any blocks placed in the header region. */
 .header__region {
-  /* Clear the logo. */
-  clear: both;
+  float: right; /* LTR */
+  ul.social-media-links {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      list-style-type: none;
+      list-style-image: none;
+      margin-left: 6px;
+      float: right;
+    }
+  }
 }
 
 /**
@@ -115,3 +119,6 @@
     }
   }
 }
+
+/* vim:sts=2:sw=2:et
+*/

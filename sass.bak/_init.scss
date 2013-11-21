@@ -44,8 +44,6 @@ $legacy-support-for-ie8: true;
 // Font faces, stacks and sizes.
 //
 
-$max-content-width: 60em;
-
 // Compass' vertical_rhythm extension is a powerful tool to set up a vertical
 // rhythm for your entire page. You can see some of its mixins and functions in
 // use in the normalize.scss file.
@@ -86,45 +84,23 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
-$source-sans-pro: "Source Sans Pro", Arial, sans-serif;
-
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $source-sans-pro; /* set on the html element */
-$font-body:        $source-sans-pro;
+$base-font-family: $verdana; // The font family set on the html element.
+$font-body:        $verdana;
 $font-monospace:   $courier;
 
 
 //
 // Colors, etc.
+$gwwcred: #6c0000;
+$gwwcgray: #626262;
 //
-
-// brand colours, taken from branding guidebook
-$brand-white-fg: white;
-$brand-red-bg: #6c0000;
-$brand-grey-fg: #c7c3c0;
-$brand-grey-bg: $brand-grey-fg;
-$brand-dark-grey-fg: #343434;
-
-// compat, misspellings etc.
-$brand-gray-fg: $brand-grey-fg;
-$brand-gray-bg: $brand-grey-bg;
-$brand-dark-gray-fg: $brand-dark-grey-fg;
-$gwwc-red: $brand-red-bg;
-$gwwc-gray: #626262;
-$gwwcred: $gwwc-red;
-$gwwcgray: $gwwc-gray;
-$gwwcgrey: $gwwc-gray;
-$gwwcblack: $brand-dark-grey-fg;
-$gwwclightgrey: $brand-grey-fg;
-
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
 
 // The height of the navigation container.
-$nav-height: 2em;
-// The height of the header.
-$header-height: 60px;
+$nav-height: 3em;
 
 // Tab styling.
 $tabs-container-bg: #fff;
@@ -134,9 +110,6 @@ $tabs-border: #bbb;
 // =============================================================================
 // Partials to be shared with all .scss files.
 // =============================================================================
-
-// Add the Source Sans font from Google
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 
 // Add Compass' IE and vendor prefix support variables.
 @import "compass/support";

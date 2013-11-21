@@ -74,6 +74,166 @@
 }
 
 /**
+ * Branding header.
+ */
+
+.header {
+    background-color: $gwwcred;
+    padding-top:10px;
+    height: 75px;
+}
+
+/* Wrapping link for logo. */
+.header__logo {
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo image. */
+.header__logo-image {
+  vertical-align: bottom;
+}
+
+/* Wrapper for website name and slogan. */
+.header__name-and-slogan {
+  float: left;
+}
+
+/* The name of the website. */
+.header__site-name {
+  margin: 0;
+  @include adjust-font-size-to( $h1-font-size );
+}
+
+/* The link around the name of the website. */
+.header__site-link {
+  &:link,
+  &:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+/* The slogan (or tagline) of a website. */
+.header__site-slogan {
+  margin: 0;
+}
+
+/* The secondary menu (login, etc.) */
+.header__secondary-menu {
+  float: right; /* LTR */
+}
+
+/* Wrapper for any blocks placed in the header region. */
+.header__region {
+  /* Clear the logo. */
+  clear: both;
+}
+
+/**
+ * Navigation bar.
+ */
+#navigation {
+
+  background-color: white;
+  border-bottom: solid 5px $gwwcred;
+  text-align:center;
+  /* Sometimes you want to prevent overlapping with main div. */
+  /* overflow: hidden; */
+
+  .block {
+    margin-bottom: 0;
+  }
+
+  .block-menu .block__title,
+  .block-menu-block .block__title {
+    @extend %element-invisible;
+  }
+
+  /* Main menu and secondary menu links and menu block links. */
+  .links,
+  .menu,
+  #main-menu {
+    margin: 0;
+    padding: 0;
+
+    ul {
+      text-align:justify;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+    }
+
+    ul:after {
+      content: "";
+      display:inline-block;
+      width:100%;
+    }
+    
+    li {
+      /* A simple method to get navigation links to appear in one line. */
+      padding: 0 10px 0 0; /* LTR */
+      list-style-type: none;
+      list-style-image: none;
+      display: inline-block;
+      text-align:justify;
+
+      .last {
+          float:right;
+      }
+      a {
+          color: $gwwcgray;
+          text-transform: uppercase;
+          text-align:center;
+          display:inline-block;
+      }
+
+    }
+  }
+  
+}
+
+#home__wideimage {
+    background-image: url('../images/custom/header.jpg');
+    width: 100%;
+    height: image-height('../images/custom/header.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+//    width: image-width('../images/custom/header.jpg');
+}
+
+div
+  .wideblock {
+    position:absolute;
+    left:0;
+    right:0;
+    background-color:red;
+}
+
+/**
+ * Breadcrumb navigation.
+ */
+.breadcrumb {
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/**
  * Titles.
  */
 .page__title,          /* The title of the page. */
@@ -162,8 +322,8 @@
   /* IE 9 and earlier don't understand gradients. */
   list-style: none;
   border-bottom: 1px solid $tabs-border \0/ie;
-  margin: 0 0 rhythm(1) 0;
-  padding: rhythm(1) 2px 0 2px;
+  margin: rhythm(1) 0;
+  padding: 0 2px;
   white-space: nowrap;
 }
 %tabs__tab {
@@ -699,6 +859,3 @@ tr.selected td {
     background-image: image-url("progress.gif");
   }
 }
-
-/* vim:sts=2:sw=2:et
-*/

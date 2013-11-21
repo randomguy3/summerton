@@ -13,18 +13,14 @@
 @import "normalize";
 
 /* Layout rules */
-@import "layouts/gwwc";
+@import "layouts/responsive";
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
 // Optionally, add your own components here.
-@import "components/page";
-
 @import "print";
-@import "components/footer";
-@import "components/fonts";
-@import "components/images";
-@import "layouts/internal_layout";
+@import "html-reset";
+@import "gwwc3";
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */

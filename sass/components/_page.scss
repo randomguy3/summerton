@@ -78,7 +78,7 @@ html,
 .header__logo-image {
   vertical-align: bottom;
 }
-.header__site-name {
+#site-name {
   /* simply not displayed */
   display: none;
 }
@@ -137,6 +137,7 @@ html,
   }
 }
 
+@if false {
 /**
  * Footer
  */
@@ -172,6 +173,7 @@ html,
       border-left: none;
     }
   }
+}
 }
 
 /* vim:sts=2:sw=2:et

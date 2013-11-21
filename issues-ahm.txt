@@ -2,8 +2,9 @@
   stay visible as you scroll)?
 * 3 different shades of red: brand red in most places, leader image text on
   home page ("Some charities help peoples 1000s...") slightly lighter, header
-  button backgrounds lighter still
-* Leader image text on home page should not just be an image
+  button backgrounds lighter still.
+* Leader image text on home page should not just be an image.
+* In general, any image with text needs to have the alt attribute set.
 * What should the maximum layout width be?  What, precisely, should be the
   behaviour when the browser is narrower?  Currently, the menu shrinks as much
   as it can, then goes to the bottom of the page.
@@ -12,4 +13,4 @@
   (impossible?) to force it to the bottom and keep the width responsive.
 * What should the leader image on the home page (girl in scarf) do on
   super-wide screens?
-* Textured image for footer (see TODO in components/_page.scss)
+* Textured image for footer (see TODO in components/_page.scss).

@@ -105,6 +105,10 @@ $brand-grey-fg: #c7c3c0;
 $brand-grey-bg: $brand-grey-fg;
 $brand-dark-grey-fg: #343434;
 
+// this, specifically, is the red used as button backgrounds in the header
+// NB: NOT a brand colour
+$gwwc-red-highlight-bg: #902223;
+
 // compat, misspellings etc.
 $brand-gray-fg: $brand-grey-fg;
 $brand-gray-bg: $brand-grey-bg;

@@ -74,3 +74,28 @@
         height: 35px;
     }
 
+
+.social-media-link {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height:26px;
+    width:26px
+}
+.social-media-link.twitter {
+    background-image: url("../images/footer/posttwitterlogo.png");
+}
+.social-media-link.facebook {
+    background-image: url("../images/footer/postfacebook.png");
+}
+.social-media-link.youtube {
+    background-image: url("../images/footer/postyoutube.png");
+}
+.social-media-link.google {
+    background-image: url("../images/footer/postgoogle.png");
+}
+.social-media-link.pinterest {
+    background-image: url("../images/footer/postpinterest.png");
+}
+
+/* vim:sts=4:sw=4:et
+*/

@@ -1,0 +1,117 @@
+/**
+ * Branding header and the navigation bar
+ *
+ * Author: Alex Merry
+ */
+
+#header-container {
+  background: $brand-red-bg;
+  color: $brand-white-fg;
+  a, a:visited {
+    color: $brand-white-fg;
+  }
+}
+
+/* The theme's fallback text-based logo */
+#logo-text {
+  font-family: $source-sans-pro;
+  background: $brand-red-bg;
+  display: block;
+  font-size: 30px;
+  width: 6em;
+  /*height: 4em;*/
+  text-align: center;
+  /*padding-top: 1.5em;*/
+  overflow: hidden;
+  margin: 0;
+  margin-left: -0.3em;
+  a, #logo a:visited {
+      text-decoration: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .logo-top {
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $brand-white-fg;
+      font-size: 173%;
+  }
+  .logo-bottom {
+      display: block;
+      text-transform: lowercase;
+      color: $brand-grey-fg;
+      margin-top: -0.3em;
+      padding-left: 0.1em;
+      font-weight: normal;
+  }
+}
+
+/* The Drupal-provided image-based logo */
+.header__logo {
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+.header__logo-image {
+  vertical-align: bottom;
+}
+#site-name {
+  /* simply not displayed */
+  display: none;
+}
+
+
+/* The secondary menu (login, etc.) */
+.header__secondary-menu {
+  float: right; /* LTR */
+}
+
+/* Wrapper for any blocks placed in the header region. */
+.header__region {
+  /* Clear the logo. */
+  clear: both;
+}
+
+/**
+ * Navigation bar.
+ */
+#navigation {
+  background: white;
+
+  .block {
+    margin-bottom: 0;
+  }
+
+  .block-menu .block__title,
+  .block-menu-block .block__title {
+    @extend %element-invisible;
+  }
+
+  #main-menu {
+    width: 100%;
+    ul.links {
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+      line-height: $nav-height;
+      letter-spacing: 0.1ex;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        list-style-image: none;
+        a, a:visited {
+          text-transform: uppercase;
+          color: $brand-dark-grey-fg;
+          text-decoration: none;
+        }
+      }
+    }
+    ul.links:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}

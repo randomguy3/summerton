@@ -10,70 +10,111 @@
   a, a:visited {
     color: $brand-white-fg;
   }
-}
 
-/* The theme's fallback text-based logo */
-#logo-text {
-  font-family: $source-sans-pro;
-  background: $brand-red-bg;
-  display: block;
-  font-size: 30px;
-  width: 6em;
-  /*height: 4em;*/
-  text-align: center;
-  /*padding-top: 1.5em;*/
-  overflow: hidden;
-  margin: 0;
-  margin-left: -0.3em;
-  a, #logo a:visited {
-      text-decoration: none;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+  /* The theme's fallback text-based logo */
+  #logo-text {
+    font-family: $source-sans-pro;
+    background: $brand-red-bg;
+    display: block;
+    font-size: 30px;
+    width: 6em;
+    /*height: 4em;*/
+    text-align: center;
+    /*padding-top: 1.5em;*/
+    overflow: hidden;
+    margin: 0;
+    margin-left: -0.3em;
+    a, #logo a:visited {
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-top {
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $brand-white-fg;
+        font-size: 173%;
+    }
+    .logo-bottom {
+        display: block;
+        text-transform: lowercase;
+        color: $brand-grey-fg;
+        margin-top: -0.3em;
+        padding-left: 0.1em;
+        font-weight: normal;
+    }
   }
-  .logo-top {
-      display: block;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: $brand-white-fg;
-      font-size: 173%;
-  }
-  .logo-bottom {
-      display: block;
-      text-transform: lowercase;
-      color: $brand-grey-fg;
-      margin-top: -0.3em;
-      padding-left: 0.1em;
-      font-weight: normal;
-  }
-}
 
-/* The Drupal-provided image-based logo */
-.header__logo {
-  float: left; /* LTR */
-  margin: 0;
-  padding: 0;
-}
-.header__logo-image {
-  vertical-align: bottom;
-}
-#site-name {
-  /* simply not displayed */
-  display: none;
-}
+  /* TODO: fallback for this table/table-cell stuff for IE 7 */
+  .header-inner {
+    display: table;
+    width: 100%;
+    .header-logo-container, .header-region-container {
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
 
-/* Wrapper for any blocks placed in the header region. */
-.header__region {
-  float: right; /* LTR */
-  ul.social-media-links {
+  /* The Drupal-provided image-based logo */
+  .header__logo {
+    float: left; /* LTR */
     margin: 0;
     padding: 0;
-    li {
-      display: inline-block;
-      list-style-type: none;
-      list-style-image: none;
-      margin-left: 6px;
-      float: right;
+  }
+  .header__logo-image {
+    vertical-align: bottom;
+  }
+  #site-name {
+    /* simply not displayed */
+    display: none;
+  }
+
+  .header__region {
+    display: table;
+    float: right;
+    .block {
+      margin: 0;
+      display: table-cell;
+      vertical-align: middle;
+      ul.quick-links {
+        margin: 0 0.6em 0 0;
+        padding: 0;
+        float: left;
+        li {
+          float: left;
+          list-style-type: disc;
+          /* FIXME: this value seems fragile */
+          margin-left: 1.8em;
+          a, a:visited {
+            text-decoration: none;
+          }
+        }
+        li.first {
+          list-style-type: none;
+          margin-left: 0;
+        }
+      }
+      ul.highlighted-links {
+        float: left;
+        margin: 0;
+        padding: 0;
+        li {
+          float: left;
+          list-style-image: none;
+          list-style-type: none;
+          a, a:visited {
+            text-decoration: none;
+            display: inline-block;
+            background: $gwwc-red-highlight-bg;
+            text-align: center;
+            border-radius: 0.5ex;
+            padding: 0.2em 0.8em;
+            margin-right: 0.6em;
+          }
+        }
+      }
     }
   }
 }

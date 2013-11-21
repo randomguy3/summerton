@@ -12,20 +12,24 @@
 
   <div id="header-container">
     <header class="header" id="header" role="banner">
+      <div class="header-inner">
+        <div class="header-logo-container">
+          <?php if ($logo): ?>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+            <?php if ($site_name): ?>
+              <h1 class="header__site-name" id="site-name">
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><span><?php print $site_name; ?></span></a>
+              </h1>
+            <?php endif; ?>
+          <?php else: ?>
+            <h1 id="logo-text"><a href="/"><span class="logo-top">Giving</span> <span class="logo-bottom">What We Can</span></a></h1>
+          <?php endif; ?>
+        </div>
 
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
-        <?php if ($site_name): ?>
-          <h1 class="header__site-name" id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
-        <?php endif; ?>
-      <?php else: ?>
-        <h1 id="logo-text"><a href="/"><span class="logo-top">Giving</span> <span class="logo-bottom">What We Can</span></a></h1>
-      <?php endif; ?>
-
-      <?php print render($page['header']); ?>
-
+        <div class="header-region-container">
+          <?php print render($page['header']); ?>
+        </div>
+      </div>
     </header>
   </div>
 

@@ -14,3 +14,5 @@
 * What should the leader image on the home page (girl in scarf) do on
   super-wide screens?
 * Textured image for footer (see TODO in components/_page.scss).
+* favicon
+* what should links do on hover?

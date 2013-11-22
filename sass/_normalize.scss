@@ -191,6 +191,9 @@ h2 {
   @include adjust-font-size-to( $h2-font-size );
   @include leader(1, $h2-font-size);
   @include trailer(1, $h2-font-size);
+  font-weight: 300;
+  color: $brand-red-bg;
+  text-align: center;
 }
 h3 {
   @include adjust-font-size-to( $h3-font-size );

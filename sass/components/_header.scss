@@ -1,0 +1,164 @@
+/**
+ * Branding header and the navigation bar
+ *
+ * Author: Alex Merry
+ */
+
+#header-container {
+  background: $brand-red-bg;
+  color: $brand-white-fg;
+  a, a:visited {
+    color: $brand-white-fg;
+  }
+
+  /* The theme's fallback text-based logo */
+  #logo-text {
+    font-family: $source-sans-pro;
+    background: $brand-red-bg;
+    display: block;
+    font-size: 30px;
+    width: 6em;
+    /*height: 4em;*/
+    text-align: center;
+    /*padding-top: 1.5em;*/
+    overflow: hidden;
+    margin: 0;
+    margin-left: -0.3em;
+    a, #logo a:visited {
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-top {
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $brand-white-fg;
+        font-size: 173%;
+    }
+    .logo-bottom {
+        display: block;
+        text-transform: lowercase;
+        color: $brand-grey-fg;
+        margin-top: -0.3em;
+        padding-left: 0.1em;
+        font-weight: normal;
+    }
+  }
+
+  /* TODO: fallback for this table/table-cell stuff for IE 7 */
+  .header-inner {
+    display: table;
+    width: 100%;
+    .header-logo-container, .header-region-container {
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+
+  /* The Drupal-provided image-based logo */
+  .header__logo {
+    float: left; /* LTR */
+    margin: 0;
+    padding: 0;
+  }
+  .header__logo-image {
+    vertical-align: bottom;
+  }
+  #site-name {
+    @include element-invisible;
+  }
+
+  .header__region {
+    display: table;
+    float: right;
+    .block {
+      margin: 0;
+      display: table-cell;
+      vertical-align: middle;
+      ul.quick-links {
+        margin: 0 0.6em 0 0;
+        padding: 0;
+        float: left;
+        li {
+          float: left;
+          list-style-type: disc;
+          /* FIXME: this value seems fragile */
+          margin-left: 1.8em;
+          a, a:visited {
+            text-decoration: none;
+          }
+        }
+        li.first {
+          list-style-type: none;
+          margin-left: 0;
+        }
+      }
+      ul.highlighted-links {
+        float: left;
+        margin: 0;
+        padding: 0;
+        li {
+          float: left;
+          list-style-image: none;
+          list-style-type: none;
+          a, a:visited {
+            text-decoration: none;
+            @include inline-block;
+            background: $gwwc-red-highlight-bg;
+            text-align: center;
+            @include border-radius(0.5ex);
+            padding: 0.2em 0.8em;
+            margin-right: 0.6em;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Navigation bar.
+ */
+#navigation {
+  background: white;
+
+  .block {
+    margin-bottom: 0;
+  }
+
+  .block-menu .block__title,
+  .block-menu-block .block__title {
+    @extend %element-invisible;
+  }
+
+  #main-menu {
+    width: 100%;
+    ul.links {
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+      line-height: $nav-height;
+      letter-spacing: 0.1ex;
+      li {
+        @include inline-block;
+        list-style-type: none;
+        list-style-image: none;
+        a, a:visited {
+          text-transform: uppercase;
+          color: $brand-dark-grey-fg;
+          text-decoration: none;
+        }
+      }
+    }
+    ul.links:after {
+      content: '';
+      @include inline-block;
+      width: 100%;
+    }
+  }
+}
+
+/* vim:sts=2:sw=2:et
+*/

@@ -74,3 +74,41 @@
         height: 35px;
     }
 
+
+.social-media-links {
+    a {
+        background-repeat: no-repeat;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-indent: 110%;
+    }
+    a.twitter {
+        background-image: url("../images/footer/posttwitterlogo.png");
+        width: image-width('footer/posttwitterlogo.png');
+        height: image-height('footer/posttwitterlogo.png');
+    }
+    a.facebook {
+        background-image: url("../images/footer/postfacebook.png");
+        width: image-width('footer/postfacebook.png');
+        height: image-height('footer/postfacebook.png');
+    }
+    a.youtube {
+        background-image: url("../images/footer/postyoutube.png");
+        width: image-width('footer/postyoutube.png');
+        height: image-height('footer/postyoutube.png');
+    }
+    a.google {
+        background-image: url("../images/footer/postgoogle.png");
+        width: image-width('footer/postgoogle.png');
+        height: image-height('footer/postgoogle.png');
+    }
+    a.pinterest {
+        background-image: url("../images/footer/postpinterest.png");
+        width: image-width('footer/postpinterest.png');
+        height: image-height('footer/postpinterest.png');
+    }
+}
+
+/* vim:sts=4:sw=4:et
+*/

@@ -66,6 +66,8 @@ stylesheets[all][] = css/styles.css
 
 ;scripts[] = js/script.js
 scripts[] = js/knob/jQuery-Knob/js/jquery.knob.js
+scripts[] = js/find-region.js
+
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

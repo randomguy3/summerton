@@ -700,5 +700,26 @@ tr.selected td {
   }
 }
 
+/**
+ * Social media links
+ */
+ul.social-media-links {
+  margin: 0;
+  padding: 0;
+  li {
+    @include inline-block;
+    margin: 0 6px 0 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+    float: left;
+    /* make sure it is no higher than the contained link image */
+    line-height: 0;
+  }
+  li.last {
+    margin-right: 0;
+  }
+}
+
 /* vim:sts=2:sw=2:et
 */

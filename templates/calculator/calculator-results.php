@@ -15,7 +15,7 @@ $results['richtimes'] = 24;
  */
 ?>
 <div class="container calculator">
-    <div class="container justify greyblock">
+    <div class="container justify grey">
         <div class="container inline">
             <label for="country">Location</label>
             <select name="country" onChange="selectcurrency(this.value)" id="calc-howrich-country" class="calcselect">
@@ -71,23 +71,34 @@ $results['richtimes'] = 24;
     </div>
 
     <div class="results center tcenter">
-        <p> You are in the richest <span class="redbold"><?php echo $results['richpercent']; ?>%</span> of the world's population. <br>
+        <p> You are in the richest <span class="red bold"><?php echo $results['richpercent']; ?>%</span> of the world's population. <br>
             Your income is <?php echo ($results['richtimes'] > 1)? 'more':'less' ?> than <span class="redbold"><?php echo $results['richtimes']; ?>%</span> of the global average. <p>
     </div>
-    <div class="container">
-        <div class="container inline left">
-            <div class="tweet">
+    <div class="container center tcenter">
+        <div class="container inline middle">
+            <div class="round-box red">
                 <p> If you were to donate <span id="percentage">10</span>% of your income: </p>  
                 <div id="slider"></div>
-                <p> You would still be in the richest <?php echo $results['richpercent']; ?> of the world's population. Your income would still be more than <?php echo $results['richtimes']; ?> times the global average. </p>
-                <p class="bold" > And with your donation, every year: </p> 
+                <p> You would still be in the richest <?php echo $results['richpercent']; ?>%  of the world's population. Your income would still be more than <?php echo $results['richtimes']; ?> times the global average. </p>
+                <p class="bold" > And with your donation, every year... </p> 
             </div>
                 <b class="notch"></b> 
             </div>
-        <div class="container inline right">
-            <input data-readonly="true" type="text" value="90" class="knob" data-width="240" data-max="100" data-min="0" data-fgcolor="#ffa800">
+        <div class="container inline middle">
+            <input data-readonly="true" type="text" value="90" class="knob" data-width="300" data-height="300" data-max="100" data-min="0" data-fgcolor="#ffa800">
         </div>
     </div>
+    <div class="container center tcenter">
+        <div class="container inline">
+            <?php include path_to_theme()."/templates/sharing/socialshare.php" ?>
+        </div>
+    </div>
+
+    <div class="container" id="AMF">
+        
+    </div>
+    <div class="container" id="SCI">
+     </div>   
 </div>
 
 
@@ -108,7 +119,8 @@ $results['richtimes'] = 24;
     jQuery(function() {
         jQuery(".knob").knob({
                 displayInput: false,
-                angleArc: 334                
+                angleArc: 334,
+                thickness: ".15"
             });
     });
 </script>

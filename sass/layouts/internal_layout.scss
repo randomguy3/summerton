@@ -21,6 +21,14 @@ div .right {
     float:right;
 }
 
+div .top {
+    vertical-align:top;
+}
+
+div .middle {
+    vertical-align:middle;
+}
+
 div .wideblock {
 //    overflow:auto;
     @extend .container;
@@ -49,6 +57,10 @@ div .wideblock {
 
 .justify {
     text-align: justify;
+}
+
+.sminline {
+    display:inline;
 }
 
 .inline {

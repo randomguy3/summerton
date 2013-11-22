@@ -1,3 +1,5 @@
+// UI ISSUES:
+
 * Header bar/menu bar: should it be positioned relative to window (ie: always
   stay visible as you scroll)?
 * 3 different shades of red: brand red in most places, leader image text on
@@ -16,3 +18,18 @@
 * Textured image for footer (see TODO in components/_page.scss).
 * favicon
 * what should links do on hover?
+
+// BACKEND IMPLEMENTATIONS:
+
+* CRM integration
+1) Where will user profiles be stored: CRM or on the website db?
+    Integration with CRM makes most sense
+
+2) Profile page templates:
+    a) What exactly is going to be on here?
+    b) What the year indexes to - i.e. what purpose do the year tabs serve:
+        no dynamic data (unless link to dashboard)
+    
+3) Blog:
+    
+

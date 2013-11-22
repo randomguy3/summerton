@@ -1,0 +1,29 @@
+.tweet,
+.round-box {
+    color: white;
+    font-size: 0.75em;
+    line-height: 1.5em;
+	width: 261px;
+/*	height: 100px;*/
+
+    padding: 5px 12px;
+    background-color: #404040;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+div.red {
+    background-color: $gwwcred;
+}
+
+div.grey {
+    background-color: $gwwclightgrey;
+    padding: 10px;
+}
+
+div.bordergrey {
+    border-style:solid;
+    border-color:$gwwclightgrey;
+}
+

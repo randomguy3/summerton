@@ -67,8 +67,7 @@
     vertical-align: bottom;
   }
   #site-name {
-    /* simply not displayed */
-    display: none;
+    @include element-invisible;
   }
 
   .header__region {
@@ -106,10 +105,10 @@
           list-style-type: none;
           a, a:visited {
             text-decoration: none;
-            display: inline-block;
+            @include inline-block;
             background: $gwwc-red-highlight-bg;
             text-align: center;
-            border-radius: 0.5ex;
+            @include border-radius(0.5ex);
             padding: 0.2em 0.8em;
             margin-right: 0.6em;
           }
@@ -143,7 +142,7 @@
       line-height: $nav-height;
       letter-spacing: 0.1ex;
       li {
-        display: inline-block;
+        @include inline-block;
         list-style-type: none;
         list-style-image: none;
         a, a:visited {
@@ -155,7 +154,7 @@
     }
     ul.links:after {
       content: '';
-      display: inline-block;
+      @include inline-block;
       width: 100%;
     }
   }

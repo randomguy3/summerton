@@ -9,6 +9,7 @@ div.wideblock {
         h3 {
             color: $gwwcred;
             font-weight: bold;
+            margin-top: 0;
         }
     }
     &.odd {
@@ -20,6 +21,7 @@ div.wideblock {
         h3 {
             color: $gwwcgrey;
             font-weight: bold;
+            margin-top: 0px;
         }
     }
     p {

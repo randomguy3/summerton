@@ -1,20 +1,33 @@
 /* E-mail sign up */
-#email-signup-submit {
-background: url('../images/forms/button-bg-gray.png') repeat-x top left;
-height: 50px;
-border: none;
-border-radius: 2px;
-color: white;
-text-transform: uppercase;
+#email-signup {
+    button {
+    // TODO: Add in background image
+    //background: url('../images/forms/button-bg-gray.png') repeat-x top left;
+    background-color: $gwwcblack;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    }
+    input {
+        height: 50px;
+    }
+    label {
+        display: inline;
+        margin-right: 5px;
+    }
 }
+
+
 
 /* footer */
 #footer {
-	background: url('../images/page-backgrounds/footer-inner.png') repeat top left;
+//	background: url('../images/page-backgrounds/footer-inner.png') repeat top left;
 	width: 980px; /* padding included in internal sections, border outside */
 	padding: 22px 0 20px;
 //    background-color: black;	
-	border: 1px solid #1d1d1a;
+//	border: 1px solid #1d1d1a;
 	border-top: none;
 //    background-color:black;
 	border-bottom-left-radius: 6px;  /* NEEDS REPLACING - placeholder from Tom */

@@ -13,7 +13,7 @@ environment = :development
 
 # In development, we can turn on the FireSass-compatible debug_info.
 firesass = true
-#firesass = true
+#firesass = false
 
 
 # Location of the theme's resources.

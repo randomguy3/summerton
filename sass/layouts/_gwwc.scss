@@ -51,6 +51,11 @@ html, body {
   @include clearfix
 }
 
+article {
+  /* hack to prevent margins collapsing */
+  padding-top: 1px;
+}
+
 #footer-container {
   width: 100%;
   position: absolute;
@@ -65,6 +70,8 @@ $nav-border: 0.4em;
   }
   #main {
     position: relative;
+    /* hack to prevent margins collapsing */
+    padding-top: 1px;
   }
   #navigation {
     /* Move the navbar up inside #main/#header's padding. */

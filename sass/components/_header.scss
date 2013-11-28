@@ -114,6 +114,24 @@
           }
         }
       }
+      @media all and (max-width: 45em) {
+        /* hide the social media links when the screen is too narrow */
+        ul.social-media-links {
+          display: none;
+        }
+      }
+      @media all and (max-width: 34em) {
+        /* hide the links that are available at the bottom of the page when the screen is too narrow */
+        ul.highlighted-links {
+          display: none;
+        }
+      }
+      @media all and (max-width: 22em) {
+        /* this is getting ridiculous */
+        ul.quick-links {
+          display: none;
+        }
+      }
     }
   }
 }

@@ -157,12 +157,12 @@
       margin: 0;
       padding: 0;
       text-align: justify;
-      line-height: $nav-height;
       letter-spacing: 0.1ex;
       li {
         @include inline-block;
         list-style-type: none;
         list-style-image: none;
+        line-height: $nav-height;
         a, a:visited {
           text-transform: uppercase;
           color: $brand-dark-grey-fg;

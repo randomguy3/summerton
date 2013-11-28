@@ -62,32 +62,33 @@ article {
   left: 0;
 }
 
+/**
+ * Navigation bar
+ */
 $nav-border: 0.4em;
-@media all and (min-width: 535px) {
-  /* Extend header down to make room for nav */
-  #header-container {
-    padding-bottom: $nav-height + $nav-border;
-  }
-  #main {
-    position: relative;
-    /* hack to prevent margins collapsing */
-    padding-top: 1px;
-  }
-  #navigation {
-    /* Move the navbar up inside #main/#header's padding. */
-    position: absolute;
-    top: 0 - $nav-height - $nav-border;
-    height: $nav-height;
-    width: 100%;
-    /* Prevents the links covering the main text if the min-width
-       argument for this section is wrong */
-    overflow: hidden;
-  }
-  #main-menu {
-    max-width: $max-content-width;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* Extend header down to make room for nav */
+#header-container {
+  padding-bottom: $nav-height + $nav-border;
+}
+#main {
+  position: relative;
+  /* hack to prevent margins collapsing */
+  padding-top: 1px;
+}
+#navigation {
+  /* Move the navbar up inside #main/#header's padding. */
+  position: absolute;
+  top: 0 - $nav-height - $nav-border;
+  height: $nav-height;
+  width: 100%;
+  /* Prevents the links covering the main text if the min-width
+     argument for this section is wrong */
+  overflow: hidden;
+}
+#main-menu {
+  max-width: $max-content-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* vim:sts=2:sw=2:et

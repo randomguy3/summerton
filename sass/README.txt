@@ -2,7 +2,7 @@ ABOUT SASS AND COMPASS
 ----------------------
 
 This directory includes Sass versions of Zen's CSS files. (If you are wondering
-how these Sass files are organized, read the css/README.txt file.)
+how these Sass files are organized, look at the top of the styles.scss file.)
 
 Sass is a language that is just normal CSS plus some extra features, like
 variables, nested rules, math, mixins, etc. If your stylesheets are written in

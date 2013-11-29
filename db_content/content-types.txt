@@ -1,0 +1,15 @@
+Need to add a content type whose machine name is "raw".  This is for certain
+special pages whose content needs to span the width of the page (eg: the
+homepage, with its alternating colour blocks).
+
+I called this "Special Page", and set the description to
+  A page where free reign is needed over the content; in particular, the
+  content will span the width of the page.
+and the "Explanation or submission guidelines" to
+  Note that you will need to wrap the actual content (text etc) in containers
+  with the class .content-block, like &lt;div
+  class="content-block"&gt;&lt;p&gt;CONTENT&lt;/p&gt;&lt;/div&gt;
+Don't forget to uncheck "Display author and date information" on the "Display
+settings" tab, and set the default comment setting to "closed".
+
+Also, you might want to edit the "Body" field to default to "Unfiltered HTML".

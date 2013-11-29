@@ -191,14 +191,15 @@ h1 {
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   @include leader(1, $h1-font-size);
   @include trailer(1, $h1-font-size);
+  font-weight: 300;
+  color: $brand-red-bg;
+  text-align: center;
 }
 h2 {
   @include adjust-font-size-to( $h2-font-size );
   @include leader(1, $h2-font-size);
   @include trailer(1, $h2-font-size);
-  font-weight: 300;
-  color: $brand-red-bg;
-  text-align: center;
+  color: $brand-dark-grey-fg;
 }
 h3 {
   @include adjust-font-size-to( $h3-font-size );

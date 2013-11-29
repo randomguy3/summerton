@@ -34,13 +34,46 @@ html, body {
 }
 
 #page-title {
-  display: none;
+  @extend %element-invisible;
 }
 
 #header-container {
   width: 100%;
   top: 0;
   left: 0;
+
+  .header__logo {
+    float: left; /* LTR */
+    margin: 0;
+    padding: 0;
+  }
+  .header__logo-image {
+    vertical-align: bottom;
+  }
+  #site-name {
+    @include element-invisible;
+  }
+
+  // Blocks in the header go on the right of the bar, vertically centered.
+  // This means using a table layout (for the vertical centering).
+  // TODO: fallback for this table/table-cell stuff for IE 7 (float right?).
+  .header-inner {
+    display: table;
+    width: 100%;
+    .header-logo-container, .header-region-container {
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+  .header__region {
+    display: table;
+    float: right;
+    .block {
+      @include reset-box-model;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 }
 #header, #footer {
   max-width: $max-content-width;
@@ -81,15 +114,25 @@ $nav-border: 0.4em;
   top: 0 - $nav-height - $nav-border;
   height: $nav-height;
   width: 100%;
-  /* Prevents the links covering the main text if the min-width
-     argument for this section is wrong */
-  overflow: hidden;
-}
-#main-menu {
-  max-width: $max-content-width;
-  margin-left: auto;
-  margin-right: auto;
+
+  .block {
+    @include reset-box-model;
+  }
+
+  .block-menu .block__title,
+  .block-menu-block .block__title {
+    @extend %element-invisible;
+  }
+
+  #main-menu {
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    ul.links {
+      @include justified-horizontal-list($min-spacing: 1em, $height: $nav-height);
+    }
+  }
 }
 
-/* vim:sts=2:sw=2:et
-*/
+// vim:sts=2:sw=2:et

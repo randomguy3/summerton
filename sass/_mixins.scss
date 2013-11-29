@@ -4,6 +4,8 @@
 // Define the custom mixins for your project here.
 // http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
 
+@import "compass/typography/lists/bullets";
+
 // Makes an element visually hidden, but accessible.
 // @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 @mixin element-invisible {
@@ -35,3 +37,112 @@
     @include element-invisible-off;
   }
 }
+
+// Make a list display horizontally, with evenly-spaced elements
+// that extend to the width of the containing element.
+//
+// If the spacing between elements gets less than $min-spacing
+// (default 0), it will wrap.
+//
+// If $height is specified, the list will have that height; any
+// elements that do not fit will disappear, from last to first.
+// Setting $height will also vertically centre the text.
+@mixin justified-horizontal-list($min-spacing: false, $height: false) {
+  @include reset-box-model;
+  @include clearfix;
+  text-align: justify;
+  @if $height {
+    height: $height;
+    overflow: hidden;
+    li {
+      line-height: $height;
+    }
+  }
+  li {
+    @include inline-block;
+    @include no-bullet;
+    @if $min-spacing {
+      padding: {
+        left: $min-spacing / 2;
+        right: $min-spacing / 2;
+      }
+      // we depend on drupal's 
+      &.first, &:first-child {
+        padding-left: 0;
+      }
+      &.last {
+        padding-right: 0;
+      }
+      // IE8 ignores rules that are included on the same line as :last-child see http://www.richardscarrott.co.uk/posts/view/ie8-last-child-bug for details
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  // this is the magic that extends the list to fill the container
+  &:after {
+    content: '';
+    @include inline-block;
+    width: 100%;
+  }
+}
+
+
+//
+// Colour utilities
+//
+
+// Applies a colour scheme, ensuring it is also applied to links
+@mixin colour-scheme($background, $fgcolour, $linkhovercolour: false) {
+  color: $fgcolour;
+  background: $background;
+  a, a:visited {
+    color: $fgcolour;
+    @if $linkhovercolour {
+      &:hover, &:focus {
+        color: $linkhovercolour;
+      }
+    }
+  }
+}
+
+@mixin white-on-red {
+  @include colour-scheme($background: $brand-red-bg,
+                         $fgcolour: $brand-white-fg,
+                         $linkhovercolour: $brand-grey-fg);
+}
+
+@mixin light-grey-on-dark-grey {
+  @include colour-scheme($background: $brand-dark-grey-fg,
+                         $fgcolour: $brand-white-fg,
+                         $linkhovercolour: darken($brand-grey-fg, 20));
+}
+
+@mixin grey-on-white {
+  @include colour-scheme($background: white,
+                         $fgcolour: $brand-dark-grey-fg,
+                         $linkhovercolour: lighten($brand-dark-grey-fg, 20));
+}
+
+@mixin button-link($background: false, $fgcolour: false, $linkhovercolour: false, $linkhoverbackground: false, $radius: 0.5ex, $padding: 0.2em 0.8em) {
+  @include inline-block;
+  @if $background {
+    background: $background;
+  }
+  @if $fgcolour {
+    color: $fgcolour;
+  }
+  &:hover, &:focus {
+    @if $linkhovercolour {
+        color: $linkhovercolour;
+    }
+    @if $linkhoverbackground {
+        background: $linkhoverbackground;
+    }
+  }
+  text-align: center;
+  @include border-radius($radius);
+  padding: $padding;
+}
+
+// vim:et:sts=2:sw=2

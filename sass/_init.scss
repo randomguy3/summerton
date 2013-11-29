@@ -98,7 +98,7 @@ $font-monospace:   $courier;
 //
 // Colors, etc.
 //
-// You probably want to use the mixins in _colourutils.scss
+// You probably want to use the mixins in _mixins.scss
 //
 
 // brand colours, taken from branding guidebook
@@ -155,8 +155,7 @@ $tabs-border: #bbb;
 @import "compass/css3";
 // Helps set up a vertical rhythm.
 @import "compass/typography/vertical_rhythm";
+@import "compass/reset/utilities";
 
 // Now we add our custom helper mixins.
 @import "mixins";
-
-@import "colourutils";

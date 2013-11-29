@@ -146,7 +146,7 @@ a:active {
 
 /* Remove underlines from links */
 a:link, a:visited {
-  text-decoration: none;
+  text-decoration: inherit;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */

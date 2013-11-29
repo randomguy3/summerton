@@ -1,97 +1,54 @@
 /**
  * Branding header and the navigation bar
  *
+ * See layouts/_gwwc.scss for the actual positioning etc.
+ *
  * Author: Alex Merry
  */
+
+@import "compass/typography/lists/horizontal-list";
 
 #header-container {
   @include white-on-red;
 
-  /* TODO: fallback for this table/table-cell stuff for IE 7 */
-  .header-inner {
-    display: table;
-    width: 100%;
-    .header-logo-container, .header-region-container {
-      vertical-align: middle;
-      display: table-cell;
+  ul.quick-links {
+    @include reset-box-model;
+    margin-right: 0.6em;
+    li {
+      float: left;
+      list-style-type: disc;
+      /* FIXME: this value seems fragile */
+      margin-left: 1.8em;
+      &.first {
+        list-style-type: none;
+        margin-left: 0;
+      }
     }
   }
-
-  /* The Drupal-provided image-based logo */
-  .header__logo {
-    float: left; /* LTR */
-    margin: 0;
-    padding: 0;
+  ul.highlighted-links {
+    @include horizontal-list($padding: 0.3em);
+    margin-right: 0.6em;
+    a {
+      @include button-link($background: $gwwc-red-highlight-bg);
+    }
   }
-  .header__logo-image {
-    vertical-align: bottom;
+  // these widths are all fairly fragile
+  @media all and (max-width: 45em) {
+    /* hide the social media links when the screen is too narrow */
+    ul.social-media-links {
+      display: none;
+    }
   }
-  #site-name {
-    @include element-invisible;
+  @media all and (max-width: 34em) {
+    /* hide the links that are available at the bottom of the page when the screen is too narrow */
+    ul.highlighted-links {
+      display: none;
+    }
   }
-
-  .header__region {
-    display: table;
-    float: right;
-    .block {
-      margin: 0;
-      display: table-cell;
-      vertical-align: middle;
-      ul.quick-links {
-        margin: 0 0.6em 0 0;
-        padding: 0;
-        float: left;
-        li {
-          float: left;
-          list-style-type: disc;
-          /* FIXME: this value seems fragile */
-          margin-left: 1.8em;
-          a, a:visited {
-            text-decoration: none;
-          }
-        }
-        li.first {
-          list-style-type: none;
-          margin-left: 0;
-        }
-      }
-      ul.highlighted-links {
-        float: left;
-        margin: 0;
-        padding: 0;
-        li {
-          float: left;
-          list-style-image: none;
-          list-style-type: none;
-          a, a:visited {
-            text-decoration: none;
-            @include inline-block;
-            background: $gwwc-red-highlight-bg;
-            text-align: center;
-            @include border-radius(0.5ex);
-            padding: 0.2em 0.8em;
-            margin-right: 0.6em;
-          }
-        }
-      }
-      @media all and (max-width: 45em) {
-        /* hide the social media links when the screen is too narrow */
-        ul.social-media-links {
-          display: none;
-        }
-      }
-      @media all and (max-width: 34em) {
-        /* hide the links that are available at the bottom of the page when the screen is too narrow */
-        ul.highlighted-links {
-          display: none;
-        }
-      }
-      @media all and (max-width: 22em) {
-        /* this is getting ridiculous */
-        ul.quick-links {
-          display: none;
-        }
-      }
+  @media all and (max-width: 22em) {
+    /* this is getting ridiculous */
+    ul.quick-links {
+      display: none;
     }
   }
 }
@@ -102,44 +59,10 @@
 #navigation {
   @include grey-on-white;
 
-  .block {
-    margin-bottom: 0;
-  }
-
-  .block-menu .block__title,
-  .block-menu-block .block__title {
-    @extend %element-invisible;
-  }
-
   #main-menu {
-    width: 100%;
-    ul.links {
-      margin: 0;
-      padding: 0;
-      text-align: justify;
-      letter-spacing: 0.1ex;
-      li {
-        @include inline-block;
-        list-style-type: none;
-        list-style-image: none;
-        line-height: $nav-height;
-        margin: 0 0.5em;
-        text-transform: uppercase;
-        &.first {
-          margin-left: 0;
-        }
-        &.last {
-          margin-right: 0;
-        }
-      }
-      &:after {
-        content: '';
-        @include inline-block;
-        width: 100%;
-      }
-    }
+    letter-spacing: 0.1ex;
+    text-transform: uppercase;
   }
 }
 
-/* vim:sts=2:sw=2:et
-*/
+// vim:sts=2:sw=2:et

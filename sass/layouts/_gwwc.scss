@@ -84,11 +84,6 @@ html, body {
   @include clearfix
 }
 
-article {
-  /* hack to prevent margins collapsing */
-  padding-top: 1px;
-}
-
 #footer-container {
   width: 100%;
   position: absolute;

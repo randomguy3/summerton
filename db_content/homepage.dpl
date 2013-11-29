@@ -1,0 +1,64 @@
+<div class="wideblock even tcenter" id="home__wideimage2"></div>
+
+
+<div class="wideblock even">
+<div class="content-block">
+<h2> Our Charities </h2>
+<div class="container">
+<div class="left container inline">
+<a id="topcharitiesimg" href="" onclick="_gaq.push(['_trackEvent', 'Click - homepage', 'OurCharities'])"></a>
+</div>
+<div class="container inline" style="width:60%">
+<h3> Giving What We Can is an international charity dedicated to eliminating extreme poverty in the developing world </h3>
+<p> Our members come from many different walks of life, but are united in the belief that global poverty is one of the most important problems in the world today, and in the desire to do something about it. </p>
+<p> Extreme poverty in the developing world causes great suffering, but we can each make a huge difference, by giving more and giving to the most effective charities. At Giving What We Can, we evaluate global poverty charities and build a community of people who give 10% of their income to those that the most effective. </p>
+</div>
+<div class="stretch"></div>
+</div>
+</div>
+</div>
+
+<div class="wideblock odd justify">
+<div class="content-block">
+<div class="center">
+<div class="container inline"><div class="circular" id="CEAteam"></div>
+<h3 class="tcenter"> 373 Members </h3>
+<p class="caption"> All of our members are dedicated to eradicating poverty in the developing world, yet they come from numerous diverse background and professions. </p>
+</br>
+</div>
+<div class="container inline"><div class="circular inline" id="waterkid"></div>
+<h3 class="tcenter"> Recommended Charities </h3> 
+<p class="caption"> By giving in the right way, you can increase the effect of your giving significantly, and make it more likely that you'll carry on giving in the long term. </p>
+</br>
+</div>
+<div class="container inline"><div class="circular inline" id="CEAteamb"></div>
+<h3 class="tcenter"> Methodology </h3>
+<p class="caption"> Your choice of charity is very important. By choosing carefully you can get much more impact from your donation and thereby help many more people. </p>
+</br>
+</div>
+<div class="stretch"></div>
+</div>
+</div>
+</div>
+
+<div class="wideblock even justify">
+<div class="content-block">
+<?php include path_to_theme()."/templates/calculator/calculator_homepage.php"; ?>
+</div>
+</div>
+
+<div class="wideblock odd tcenter">
+<div class="content-block">
+<div class="container inline tcenter">
+<button class="red">Ready? Join us. </button>  
+</div>
+<div class="container inline tcenter">
+<button class="white">Or try out giving first</button>
+</div>
+<div class="stretch"></div>
+</div>
+</div>
+
+<div class="wideblock even tcenter" id="home__wideimage2">
+
+</div>

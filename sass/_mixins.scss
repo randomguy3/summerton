@@ -93,11 +93,15 @@
 //
 
 // Applies a colour scheme, ensuring it is also applied to links
-@mixin colour-scheme($background, $fgcolour, $linkhovercolour: false) {
+@mixin colour-scheme($background, $fgcolour, $linkcolour: false, $linkhovercolour: false) {
   color: $fgcolour;
   background: $background;
   a, a:visited {
-    color: $fgcolour;
+    @if $linkcolour {
+      color: $linkcolour;
+    } @else {
+      color: $fgcolour;
+    }
     @if $linkhovercolour {
       &:hover, &:focus {
         color: $linkhovercolour;
@@ -126,11 +130,13 @@
 
 @mixin button-link($background: false, $fgcolour: false, $linkhovercolour: false, $linkhoverbackground: false, $radius: 0.5ex, $padding: 0.2em 0.8em) {
   @include inline-block;
-  @if $background {
-    background: $background;
-  }
-  @if $fgcolour {
-    color: $fgcolour;
+  &:link, &:visited {
+    @if $background {
+      background: $background;
+    }
+    @if $fgcolour {
+      color: $fgcolour;
+    }
   }
   &:hover, &:focus {
     @if $linkhovercolour {

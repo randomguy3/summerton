@@ -1,35 +1,38 @@
-<div class="content-block recommended-charities">
-<h2>Our Recommended Charities</h2>
+<h1>Our Recommended Charities</h1>
 
 <p class="page-leader">With people dying every day of preventable diseases and malnutrition, it is critical that we donate to the most effective charities possible.  The difference between charities is astounding.  Some do 1,000 times as much good with their donations as others!</p>
 
 <p class="page-leader">We strongly recommend donating to these charities.  To the best of our knowledge, based on our research, these are the most cost-effective charities in the world:</p>
 
-<div class="charity-block well-established-charities">
-<h3>Well Established Charities</h3>
-<dl>
-<dt class="against-malaria">Against Malaria Foundation (AMF)</dt>
-<dd class="against-malaria">Fights malaria by distributing long-lasting insecticidal mosquito nets.
-<ul class="charity-links"><li><a href="#">Find out more</a></li><li><a href="#">Donate now</a></li></ul>
-</dd>
-<dt class="sci">Schistosomiasis Control Initiative (SCI)</dt>
-<dd class="sci">Treats neglected tropical diseases by supplying medicine via schools.
-<ul class="charity-links"><li><a href="#">Find out more</a></li><li><a href="#">Donate now</a></li></ul>
-</dd>
-</dl>
-</div>
+<div class="charity-block-container">
+  <div class="charity-block well-established-charities">
+    <h2>Well Established Charities</h2>
+    <div class="amf charity-info first">
+      <h3><img class="logo" src="/sites/all/themes/summerton/images/charities/logo_amf.png" alt="Against Malaria Foundation (AMF)" /></h3>
+      <p class="blurb">Fights malaria by distributing long-lasting insecticidal mosquito nets.</p>
+      <ul class="charity-links"><li><a href="/recommended-charities/against-malaria-foundation">Find out more</a></li><li><a href="#">Donate now</a></li></ul>
+    </div>
+    <div class="sci charity-info last">
+      <h3><img class="logo" src="/sites/all/themes/summerton/images/charities/logo_sci.png" alt="Schistosomiasis Control Initiative (SCI)" /></h3>
+      <p class="blurb">Treats neglected tropical diseases by supplying medicine via schools.</p>
+      <ul class="charity-links"><li><a href="/recommended-charities/schistosomiasis-control-initiative">Find out more</a></li><li><a href="#">Donate now</a></li></ul>
+    </div>
+    <p class="charity-summary">Against Malaria Foundation and Schistosomiasis Control Initiative have a proven track record of high-impact interventions and we are confident of their continuing success.</p>
+  </div>
 
-<div class="charity-block promising-charities">
-<h3>Promising Charities</h3>
-<dl>
-<dt class="deworm-the-world">Deworm the World</dt>
-<dd class="deworm-the-world">Treats neglected tropical diseases by working with governments.
-<ul class="charity-links"><li><a href="#">Find out more</a></li><li><a href="#">Donate now</a></li></ul>
-</dd>
-<dt class="phc">Project Healthy Children</dt>
-<dd class="phc">Improves the health of children by fortifying staple foods.
-<ul class="charity-links"><li><a href="#">Find out more</a></li><li><a href="#">Donate now</a></li></ul>
-</dd>
-</dl>
+  <div class="charity-block promising-charities">
+    <h2>Promising Charities</h2>
+    <div class="deworm-the-world charity-info first">
+      <h3><img class="logo" src="/sites/all/themes/summerton/images/charities/logo_deworm.jpg" alt="Deworm the World" /></h3>
+      <p class="blurb">Treats neglected tropical diseases by working with governments.</p>
+      <ul class="charity-links"><li><a href="/recommended-charities/deworm-world">Find out more</a></li><li><a href="#">Donate now</a></li></ul>
+    </div>
+    <div class="phc charity-info last">
+      <h3><img class="logo" src="/sites/all/themes/summerton/images/charities/logo_phc.jpg" alt="Project Healthy Children" /></h3>
+      <p class="blurb">Improves the health of children by fortifying staple foods.</p>
+      <ul class="charity-links"><li><a href="/recommended-charities/project-healthy-children">Find out more</a></li><li><a href="#">Donate now</a></li></ul>
+    </div>
+    <p class="charity-summary">Deworm the World and Project Healthy Children are relatively new. We cannot be quite as certain how successful these charities will be, but they have the potential to make an enormous impact.</p>
+  </div>
 </div>
-</div>
+<p class="progress-links"><a class="join" href="/getting-involved/join-us">Ready? Join us</a> <a class="try" href="/getting-involved/join-us/try-out-giving">or try out giving first</a></p>

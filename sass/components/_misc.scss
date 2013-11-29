@@ -721,5 +721,29 @@ ul.social-media-links {
   }
 }
 
-/* vim:sts=2:sw=2:et
-*/
+#page .progress-links {
+  text-align: center;
+  @include adjust-font-size-to( 1.9 * $base-font-size );
+  a.join {
+    @include button-link(
+      $background: $brand-red-bg,
+      $fgcolour: $brand-white-fg,
+      $linkhovercolour: $brand-grey-fg);
+      //$padding: 0.7em 0.8em);
+    margin-right: 0.3em;
+  }
+  a.try {
+    @include button-link(
+      $background: white,
+      $fgcolour: $brand-red-bg,
+      $linkhovercolour: lighten($brand-red-bg, 20));
+      //$padding: 0.7em 0.8em);
+    border: 1px solid $brand-grey-bg;
+    &:after {
+      content: ' \00bb';
+    }
+    font-weight: 300;
+  }
+}
+
+// vim:sts=2:sw=2:et

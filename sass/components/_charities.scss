@@ -1,7 +1,113 @@
-.charity-block {
-  width: 50%;
-  float: left;
+@import "compass/typography/lists/inline-list";
+$charity-logo-padding: 10px;
+$charity-box-height: 370px;
+#page .charity-block-container {
+  display: table;
+  width: 100%;
+  .charity-block {
+    display: table-cell;
+    width: 50%;
+    &.well-established-charities {
+      border-right: $brand-grey-bg dotted;
+      padding-right: 1em;
+      .logo {
+        left: $charity-logo-padding;
+      }
+    }
+    &.promising-charities {
+      padding-left: 1em;
+      .logo {
+        right: $charity-logo-padding;
+      }
+    }
+    h2, h3 {
+      @include reset-box-model;
+    }
+    h2 {
+      text-align: center;
+      color: $brand-dark-grey-fg;
+      font-weight: 300;
+      padding: 0.2em;
+      // TODO: not brand colours!
+      background: #eaeaea;
+      @include box-shadow(inset 3px 3px 5px #e3e3e3);
+      @include border-radius(0.2ex 0.2ex 0 0);
+    }
+    .charity-info {
+      color: $brand-white-fg;
+      height: $charity-box-height;
+      position: relative;
+      margin-bottom: rhythm(0.5);
+      background-repeat: no-repeat;
+      background-size: cover;
+      &.amf {
+        background-image: url('../images/charities/bg-amf.jpg');
+      }
+      &.sci {
+        background-image: url('../images/charities/bg-sci.jpg');
+      }
+      &.deworm-the-world {
+        background-image: url('../images/charities/bg-deworm.jpg');
+      }
+      &.phc {
+        background-image: url('../images/charities/bg-phc.jpg');
+      }
+      .logo {
+        @include border-radius(4px);
+        position: absolute;
+        top: $charity-logo-padding;
+      }
+      .blurb {
+        @include adjust-font-size-to( 1.8 * $base-font-size );
+        background: fade-out($brand-red-bg, 0.25);
+        text-align: center;
+        margin: 0;
+        height: $charity-box-height;
+        width: 100%;
+        vertical-align: middle;
+      }
+      ul {
+        @include inline-list;
+        position: absolute;
+        bottom: 2em;
+        width: 100%;
+        text-align: center;
+        a {
+          @include button-link(
+            $background: white,
+            $fgcolour: $brand-red-bg,
+            $linkhovercolour: lighten($brand-red-bg, 20),
+            $padding: 0.7em 0.8em);
+          font-size: 110%;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 0 0.5em;
+          &:after {
+            content: ' \25b8';
+            // HACK: got this through trial-and-error in chrome
+            vertical-align: 7%;
+          }
+        }
+      }
+      .blurb, ul {
+        // TODO: is this OK with screenreaders?
+        display: none;
+      }
+      &:hover, &:focus {
+        .blurb {
+          display: table-cell;
+        }
+        ul {
+          display: block;
+        }
+      }
+    }
+    .charity-summary {
+      border-bottom: $brand-grey-bg dotted;
+      padding-bottom: rhythm(1);
+      margin-bottom: 0;
+    }
+  }
 }
 
-/* vim:sts=2:sw=2:et
-*/
+// vim:sts=2:sw=2:et

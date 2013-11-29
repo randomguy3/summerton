@@ -21,8 +21,6 @@
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><span><?php print $site_name; ?></span></a>
               </h1>
             <?php endif; ?>
-          <?php else: ?>
-            <h1 id="logo-text"><a href="/"><span class="logo-top">Giving</span> <span class="logo-bottom">What We Can</span></a></h1>
           <?php endif; ?>
         </div>
 

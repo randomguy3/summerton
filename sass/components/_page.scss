@@ -8,21 +8,13 @@
 body,
 html,
 #footer-container {
-  /* TODO: I think this should be a textured image */
-  background: $brand-dark-grey-fg;
-  color: $brand-white-fg;
-  a, a:visited {
-    color: $brand-grey-fg;
-  }
+  /* TODO: I think the background should be a textured image */
+  @include light-grey-on-dark-grey;
 }
 
 /* the actual content defaults to dark grey on white */
 #page {
-  background: white;
-  color: $brand-dark-grey-fg;
-  a, a:visited {
-    color: $brand-dark-grey-fg;
-  }
+  @include grey-on-white;
 }
 
 

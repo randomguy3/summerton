@@ -144,6 +144,11 @@ a:focus {
 a:active {
 }
 
+/* Remove underlines from links */
+a:link, a:visited {
+  text-decoration: none;
+}
+
 /* Address `outline` inconsistency between Chrome and other browsers. */
 a:focus {
   outline: thin dotted;

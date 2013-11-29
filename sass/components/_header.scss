@@ -5,47 +5,7 @@
  */
 
 #header-container {
-  background: $brand-red-bg;
-  color: $brand-white-fg;
-  a, a:visited {
-    color: $brand-white-fg;
-  }
-
-  /* The theme's fallback text-based logo */
-  #logo-text {
-    font-family: $source-sans-pro;
-    background: $brand-red-bg;
-    display: block;
-    font-size: 30px;
-    width: 6em;
-    /*height: 4em;*/
-    text-align: center;
-    /*padding-top: 1.5em;*/
-    overflow: hidden;
-    margin: 0;
-    margin-left: -0.3em;
-    a, #logo a:visited {
-        text-decoration: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .logo-top {
-        display: block;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: $brand-white-fg;
-        font-size: 173%;
-    }
-    .logo-bottom {
-        display: block;
-        text-transform: lowercase;
-        color: $brand-grey-fg;
-        margin-top: -0.3em;
-        padding-left: 0.1em;
-        font-weight: normal;
-    }
-  }
+  @include white-on-red;
 
   /* TODO: fallback for this table/table-cell stuff for IE 7 */
   .header-inner {
@@ -140,7 +100,7 @@
  * Navigation bar.
  */
 #navigation {
-  background: white;
+  @include grey-on-white;
 
   .block {
     margin-bottom: 0;
@@ -164,23 +124,19 @@
         list-style-image: none;
         line-height: $nav-height;
         margin: 0 0.5em;
-        a, a:visited {
-          text-transform: uppercase;
-          color: $brand-dark-grey-fg;
-          text-decoration: none;
+        text-transform: uppercase;
+        &.first {
+          margin-left: 0;
+        }
+        &.last {
+          margin-right: 0;
         }
       }
-      li.first {
-        margin-left: 0;
+      &:after {
+        content: '';
+        @include inline-block;
+        width: 100%;
       }
-      li.last {
-        margin-right: 0;
-      }
-    }
-    ul.links:after {
-      content: '';
-      @include inline-block;
-      width: 100%;
     }
   }
 }

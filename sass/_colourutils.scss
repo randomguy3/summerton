@@ -1,0 +1,35 @@
+//
+// Colour utilities
+//
+
+// Applies a colour scheme, ensuring it is also applied to links
+@mixin colour-scheme($bgcolour, $fgcolour, $linkhovercolour) {
+  color: $fgcolour;
+  background: $bgcolour;
+  a, a:visited {
+    color: $fgcolour;
+    &:hover, &:focus {
+      color: $linkhovercolour;
+    }
+  }
+}
+
+@mixin white-on-red {
+  @include colour-scheme($bgcolour: $brand-red-bg,
+                         $fgcolour: $brand-white-fg,
+                         $linkhovercolour: $brand-grey-fg);
+}
+
+@mixin light-grey-on-dark-grey {
+  @include colour-scheme($bgcolour: $brand-dark-grey-fg,
+                         $fgcolour: $brand-white-fg,
+                         $linkhovercolour: darken($brand-grey-fg, 20));
+}
+
+@mixin grey-on-white {
+  @include colour-scheme($bgcolour: white,
+                         $fgcolour: $brand-dark-grey-fg,
+                         $linkhovercolour: lighten($brand-dark-grey-fg, 20));
+}
+
+// vim:et:sts=2:sw=2

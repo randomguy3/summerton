@@ -1,10 +1,9 @@
 <div class="wideblock odd">
-<div class="content-block">
-<div class="center tcenter">
-<div id="email-signup">
+<div class="content-block" id="email-signup">
 <form action="/sites/givingwhatwecan.org/forms/cross-site/sidebar-email-signup.php" id="email-signup" method="post">
-<label for="email-signup" class="inline">Enter your e-mail to find out more about GWWC:</label><input name="email" id="email-signup" value="Your email" onfocus="inputFocus(this)" onblur="inputBlur(this)" type="text" /><button id="email-signup-submit" value="Sign up" type="submit" onclick="_gaq.push(['_trackEvent', 'Click - sidebar', 'sidebar-email-signup']);"> GO </button></form>
-</div>
-</div>
+<div class="email-label-wrapper"><label for="email-signup-input">Enter your e-mail to find out more about GWWC</label></div>
+<div class="email-input-wrapper"><input name="email" id="email-signup-input" value="Your email" onfocus="inputFocus(this)" onblur="inputBlur(this)" type="text" /></div>
+<div class="email-button-wrapper"><button id="email-signup-submit" value="Sign up" type="submit" onclick="_gaq.push(['_trackEvent', 'Click - sidebar', 'sidebar-email-signup']);">Go</button></div>
+</form>
 </div>
 </div>

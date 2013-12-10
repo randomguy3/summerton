@@ -38,6 +38,46 @@
   }
 }
 
+@mixin justified-horizontal-container($min-spacing: false, $height: false) {
+  display: block;
+  @include reset-box-model;
+  @include clearfix;
+  text-align: justify;
+  @if $height {
+    height: $height;
+    overflow: hidden;
+  }
+  // this is the magic that extends the paragraph to fill the container
+  &:after {
+    content: '';
+    @include inline-block;
+    width: 100%;
+  }
+}
+@mixin justified-horizontal-item($min-spacing: false, $height: false) {
+  @include inline-block;
+  @include no-bullet;
+  @if $min-spacing {
+    padding: {
+      left: $min-spacing / 2;
+      right: $min-spacing / 2;
+    }
+    // we depend on drupal's 
+    &.first, &:first-child {
+      padding-left: 0;
+    }
+    &.last {
+      padding-right: 0;
+    }
+    // IE8 ignores rules that are included on the same line as :last-child see http://www.richardscarrott.co.uk/posts/view/ie8-last-child-bug for details
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  @if $height {
+    line-height: $height;
+  }
+}
 // Make a list display horizontally, with evenly-spaced elements
 // that extend to the width of the containing element.
 //
@@ -48,42 +88,9 @@
 // elements that do not fit will disappear, from last to first.
 // Setting $height will also vertically centre the text.
 @mixin justified-horizontal-list($min-spacing: false, $height: false) {
-  @include reset-box-model;
-  @include clearfix;
-  text-align: justify;
-  @if $height {
-    height: $height;
-    overflow: hidden;
-    li {
-      line-height: $height;
-    }
-  }
+  @include justified-horizontal-container($min-spacing, $height);
   li {
-    @include inline-block;
-    @include no-bullet;
-    @if $min-spacing {
-      padding: {
-        left: $min-spacing / 2;
-        right: $min-spacing / 2;
-      }
-      // we depend on drupal's 
-      &.first, &:first-child {
-        padding-left: 0;
-      }
-      &.last {
-        padding-right: 0;
-      }
-      // IE8 ignores rules that are included on the same line as :last-child see http://www.richardscarrott.co.uk/posts/view/ie8-last-child-bug for details
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-  }
-  // this is the magic that extends the list to fill the container
-  &:after {
-    content: '';
-    @include inline-block;
-    width: 100%;
+    @include justified-horizontal-item($min-spacing, $height);
   }
 }
 

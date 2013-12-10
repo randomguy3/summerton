@@ -27,12 +27,10 @@ $mediabar-image-height: 35px;
   padding-top: rhythm(1);
   padding-bottom: rhythm(1);
   a {
-    display: block;
     width: 100%;
-    height: $mediabar-image-height;
-    overflow: hidden;
+    @include justified-horizontal-container($min-spacing: 0.5em, $height: $mediabar-image-height);
     img {
-      height: $mediabar-image-height;
+      @include justified-horizontal-item($min-spacing: 0.5em, $height: $mediabar-image-height);
     }
   }
 }

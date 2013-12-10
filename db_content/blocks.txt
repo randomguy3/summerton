@@ -1,0 +1,56 @@
+NB: order is important!  Make sure blocks are in this order in the regions
+when you are done.  Stuff in the content region should go after the "Main page
+content" block.
+
+
+Title: (leave blank)
+Description: Quick Links (Logged In)
+Block body: header-quick-links-logged-in.dpl
+Text format: PHP code
+Region settings: select header for summerton theme
+Show block on specific page: Pages on which this PHP code returns TRUE
+PHP code: <?php return user_is_logged_in(); ?>
+
+
+Title: (leave blank)
+Description: Quick Links (Logged Out)
+Block body: header-quick-links-logged-out.dpl
+Text format: PHP code
+Region settings: select header for summerton theme
+Show block on specific page: Pages on which this PHP code returns TRUE
+PHP code: <?php return !user_is_logged_in(); ?>
+
+
+Title: (leave blank)
+Description: Highlighted Links
+Block body: header-highlighted-links.dpl
+Text format: PHP code
+Region settings: select header for summerton theme
+
+
+Title: (leave blank)
+Description: Social Media Links
+Block body: social-media-links.dpl
+Text format: unfiltered HTML
+Region settings: select header for summerton theme
+
+
+Title: (leave blank)
+Description: Email Signup
+Block body: email-signup.dpl
+Text format: unfiltered HTML
+Region settings: select content for summerton theme
+
+
+Title: (leave blank)
+Description: Media Footbar
+Block body: media-footbar.dpl
+Text format: PHP code
+Region settings: select content for summerton theme
+
+
+Title: (leave blank)
+Description: Footer
+Block body: footer.dpl
+Text format: PHP code
+Region settings: select footer for summerton theme

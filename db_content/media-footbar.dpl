@@ -1,0 +1,9 @@
+<div class="content-block" id="mediabar">
+  <a href="<?php print url('about-us/media-coverage') ?>" title="Media coverage of Giving What We Can">
+    <img src="/sites/all/themes/summerton/images/mediabar/the-guardian.png" alt="The Guardian" />
+    <img src="/sites/all/themes/summerton/images/mediabar/bbc-news.png" alt="BBC News" />
+    <img src="/sites/all/themes/summerton/images/mediabar/new-york-times.png" alt="The New York Times">
+    <img src="/sites/all/themes/summerton/images/mediabar/the-independent.png" alt="The Independent">
+    <img src="/sites/all/themes/summerton/images/mediabar/the-wall-street-journal.png" alt="The Wall Street Journal">
+  </a>
+</div>

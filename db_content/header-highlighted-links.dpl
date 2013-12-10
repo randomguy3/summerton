@@ -1,4 +1,4 @@
 <ul class="highlighted-links">
-<li class="first"><a href="/get-involved/join-local-chapter">Join Us</a></li>
-<li class="last"><a href="/get-involved/join-ustry-out-giving">Try Giving</a></li>
+<li class="first"><?php print l('Join Us', 'get-involved/join-local-chapter'); ?></li>
+<li class="last"><?php print l('Try Giving', 'get-involved/join-ustry-out-giving'); ?></li>
 </ul>

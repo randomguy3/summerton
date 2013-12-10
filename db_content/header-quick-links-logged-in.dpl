@@ -1,4 +1,4 @@
 <ul class="quick-links">
-<li class="first"><a href="/user/logout">Log Out</a></li>
-<li class="last"><a href="/about/contact-us">Contact Us</a></li>
+<li class="first"><?php print l('Log Out', 'user/logout'); ?></li>
+<li class="last"><?php print l('Contact Us', 'about/contact-us'); ?></li>
 </ul>

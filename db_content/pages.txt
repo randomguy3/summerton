@@ -6,6 +6,14 @@ Content: homepage.dpl
 Text format: PHP code
 
 
+How Rich Am I?
+==============
+Type: basic page (might have to be raw?)
+Title: How Rich Am I?
+Content: how-rich-am-i.dpl
+Text format: PHP code
+
+
 Recommended Charities
 =============
 Type: basic page

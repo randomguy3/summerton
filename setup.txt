@@ -1,0 +1,34 @@
+New Drupal install
+==================
+
+extract zen
+  (http://ftp.drupal.org/files/projects/zen-7.x-5.4.tar.gz)
+  into sites/all/themes
+git clone summerton into sites/all/themes
+git clone jQuery-Knob into summerton/js/knob
+
+Log in to Drupal; go to appearance
+Enable summerton as default theme
+
+Go to modules, enabled PHP filter module
+
+Go to configuration->text formats
+Add "Unfiltered HTML" type with no filter options checked
+
+Go to structure->content types
+Add content types as described in db_content/content-types.txt
+
+Go to structure->blocks
+Remove all existing blocks from header and footer (set region to "None"), and
+  save.
+Add blocks according to db_content/blocks.txt
+
+Add some content according to db_content/pages.txt
+
+Go to configuration->site information
+Set default front page to node/1
+
+Go to structure->menus
+Select List Links for Main Menu
+uncheck Home
+

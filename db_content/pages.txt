@@ -1,0 +1,18 @@
+Home page
+=========
+Type: Special Page (machine name: raw)
+Title: Homepage
+Content: homepage.dpl
+Text format: PHP code
+
+
+Recommended Charities
+=============
+Type: basic page
+Title: Top Charities (or Recommended Charities)
+Content: recommended-charities.dpl
+Text format: unfiltered HTML
+Check provide a menu link
+Menu link title: Top Charities
+Description: ?
+Weight: 4

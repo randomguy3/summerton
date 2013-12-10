@@ -19,6 +19,24 @@
     }
 }
 
+$mediabar-image-height: 35px;
+#mediabar {
+  background-color: white;
+  text-align: justify;
+  height: $mediabar-image-height;
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(1);
+  a {
+    display: block;
+    width: 100%;
+    height: $mediabar-image-height;
+    overflow: hidden;
+    img {
+      height: $mediabar-image-height;
+    }
+  }
+}
+
 
 
 /* footer */
@@ -247,10 +265,5 @@ width: 100%;
 		.tweet .tweet_list .tweet_text {
 		line-height: 1em;
 		}
-#mediarbar {
-background-color: white;
-padding-left: 20px;
 
-}
-
-
+// vim:sts=2:sw=2:et

@@ -7,7 +7,6 @@ html,
 
 $footer-text-color: #5b5850;
 #footer {
-  padding-top: rhythm(1);
   color: $footer-text-color;
   a, a:visited {
     color: $footer-text-color;
@@ -49,9 +48,7 @@ $footer-text-color: #5b5850;
 }
 
 #copyright-notice {
-  clear: both;
   text-align: center;
-  padding-top: rhythm(1);
 }
 
 

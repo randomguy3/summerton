@@ -50,7 +50,14 @@ Region settings: select content for summerton theme
 
 
 Title: (leave blank)
-Description: Footer
+Description: Secondary menu and social media block
 Block body: footer.dpl
+Text format: PHP code
+Region settings: select footer for summerton theme
+
+
+Title: (leave blank)
+Description: Copyright Notice
+Block body: copyright.dpl
 Text format: PHP code
 Region settings: select footer for summerton theme

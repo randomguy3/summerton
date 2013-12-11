@@ -90,13 +90,19 @@ article.raw, article.node-raw {
   margin-right: auto;
 }
 #header {
-  @include clearfix
+  @include clearfix;
 }
 
 #footer-container {
   width: 100%;
   position: absolute;
   left: 0;
+}
+#footer {
+  padding-top: rhythm(1);
+  .block {
+    @include clearfix;
+  }
 }
 
 /**

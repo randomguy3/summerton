@@ -51,6 +51,3 @@
 <a id="youtube" href="http://www.youtube.com/user/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'YouTube'])"></a>
 
 </div>
-
-
-<div id="copyright-notice"><p>&copy; copyright <?php print date('Y'); ?> givingwhatwecan.org. All rights reserved.</p></div>

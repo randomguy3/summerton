@@ -1,0 +1,1 @@
+<p id="copyright-notice">&copy; copyright <?php print date('Y'); ?> givingwhatwecan.org. All rights reserved.</p>

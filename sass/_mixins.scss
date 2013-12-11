@@ -125,7 +125,7 @@
 
 @mixin light-grey-on-dark-grey {
   @include colour-scheme($background: $brand-dark-grey-fg,
-                         $fgcolour: $brand-white-fg,
+                         $fgcolour: $brand-grey-fg,
                          $linkhovercolour: darken($brand-grey-fg, 20));
 }
 

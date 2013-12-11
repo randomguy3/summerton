@@ -8,8 +8,8 @@
 body,
 html,
 #footer-container {
-  /* TODO: I think the background should be a textured image */
   @include light-grey-on-dark-grey;
+  background-image: url("../images/footer.png");
 }
 
 /* the actual content defaults to dark grey on white */

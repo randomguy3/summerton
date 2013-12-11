@@ -1,0 +1,19 @@
+$mediabar-image-height: 35px;
+#mediabar {
+  background-color: white;
+  text-align: justify;
+  height: $mediabar-image-height;
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(1);
+  a {
+    width: 100%;
+    @include justified-horizontal-container($min-spacing: 0.5em, $height: $mediabar-image-height);
+    img {
+      @include justified-horizontal-item($min-spacing: 0.5em, $height: $mediabar-image-height);
+    }
+  }
+}
+
+
+
+// vim:sts=2:sw=2:et

@@ -1,59 +1,49 @@
-/* E-mail sign up */
-#email-signup {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+/* default html/body elementss to the footer's bg, in case it's not actually at the bottom */
+body,
+html,
+#footer-container {
+  background: #161614 url("../images/footer.png");
 }
-#email-signup form {
-  width: 100%;
-  height: rhythm(2);
-  display: table;
-  >* {
-    display: table-cell;
-    height: 100%;
-    vertical-align: middle;
-  }
-  .email-label-wrapper {
-    width: 50%;
-  }
-  label {
-    color: $brand-dark-grey-fg;
-    font-weight: normal;
-    padding-right: 0.5em;
-    font-size: 140%;
-  }
-  input {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    border: none;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-    font-size: 140%;
-  }
-  button {
-    width: 100%;
-    height: 100%;
-    background-color: $brand-dark-grey-fg;
-    text-transform: uppercase;
-    font-size: 200%;
-    border: none;
-    border-radius: 4px;
-    color: white;
+
+$footer-text-color: #5b5850;
+#footer {
+  padding-top: rhythm(1);
+  color: $footer-text-color;
+  a, a:visited {
+    color: $footer-text-color;
+    &:hover, &:focus {
+      color: darken($footer-text-color, 10);
+    }
   }
 }
 
-$mediabar-image-height: 35px;
-#mediabar {
-  background-color: white;
-  text-align: justify;
-  height: $mediabar-image-height;
-  padding-top: rhythm(1);
-  padding-bottom: rhythm(1);
-  a {
-    width: 100%;
-    @include justified-horizontal-container($min-spacing: 0.5em, $height: $mediabar-image-height);
-    img {
-      @include justified-horizontal-item($min-spacing: 0.5em, $height: $mediabar-image-height);
+#footernav {
+  @include reset-box-model;
+  float: left;
+  display: table;
+  li {
+    @include no-bullet;
+  }
+  >li {
+    *float: left; //ie<=7 hack
+    display: table-cell;
+    border-left: groove $brand-dark-grey-fg 2px;
+    padding: 0 2.5em;
+    >a {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  >li:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+  ul {
+    @include reset-box-model;
+    margin-top: 1em;
+    @include adjust-font-size-to( 0.9 * $base-font-size );
+    a {
+      text-transform: lowercase;
     }
   }
 }
@@ -61,42 +51,6 @@ $mediabar-image-height: 35px;
 
 
 /* footer */
-#footer {
-//	background: url('../images/page-backgrounds/footer-inner.png') repeat top left;
-	width: 980px; /* padding included in internal sections, border outside */
-	padding: 22px 0 20px;
-//    background-color: black;	
-//	border: 1px solid #1d1d1a;
-	border-top: none;
-//    background-color:black;
-	border-bottom-left-radius: 6px;  /* NEEDS REPLACING - placeholder from Tom */
-	border-bottom-right-radius: 6px;  /* NEEDS REPLACING - placeholder from Tom */
-}
-.gwwc3footersitemapcolumn {
-	border-right: 1px solid #252525;  /* NEEDS REPLACING - placeholder from Tom */
-	width: 127px;
-	padding-left: 28px;
-	padding-right: 10px;
-	float: left;
-}
-
-.gwwc3footersitemapcolumn.last {
-	border-right: none;
-}
-
-.gwwc3footersitemapcolumn h2 {
-	margin-top: 0;
-	text-transform: uppercase;
-	font-size: 1.142em;
-	color: #5b5850;
-	font-weight: 600;
-	margin-bottom: 12px;
-}
-
-.gwwc3footersitemapcolumn a {
-	color: #5b5850;
-}
-
 .gwwc3footersm {
   padding-right: 26px;
   

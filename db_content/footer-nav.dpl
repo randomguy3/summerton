@@ -1,0 +1,27 @@
+<ul id="footernav">
+  <li><a href="/about-us" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-about-us'])">About Us</a>
+    <ul>
+      <li><a href="/about-us/our-members" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-contact-us'])">Our members</a></li>
+      <li><a href="/about-us/member-profiles" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-site-map'])">Member profiles</a></li>
+      <li><a href="/about-us/directors" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-press-kit'])">Directors</a></li>
+      <li><a href="/about-us/frequently-asked-questions" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-about us'])">FAQ</a></li>
+    </ul>
+  </li>
+  <li><a href="/about-us/the-pledge" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-the-pledge'])">The Pledge</a>
+    <ul>
+      <li><a href="/how-to-give/why-pledge" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-ten-percent'])">Giving 10%</a></li>
+      <li><a href="/getting-involved/joining-us/giving-more-0" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-giving-more'])">Giving more</a></li>
+      <li><a href="/getting-involved/joining-us/trying-out-giving" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-further-information'])">Not ready yet?</a></li>
+      <li><a href="/getting-involved/joining-us/trying-out-giving" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-further-information'])">Further Information</a></li>
+    </ul>
+  </li>
+  <li><a href="/getting-involved"  onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-get-involved'])">Get Involved</a>
+    <ul>
+      <li><a href="/getting-involved/joining-us" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-ten-percent'])">Take the pledge</a></li>
+      <li><a href="/getting-involved/keep-in-touch" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-keeping-in-touch'])">Keeping in touch</a></li>
+      <li><a href="/getting-involved/spread-the-word" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-spreading-the-word'])">Spreading the word</a></li>
+      <li><a href="/getting-involved/local-chapters" onclick="_gaq.push(['_trackEvent', 'Click - footer', fac'footer-local chapters'])">Local chapters</a></li>
+      <li><a href="/getting-involved/volunteer-with-us" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'footer-volunteering'])">Volunteering</a></li>
+    </ul>
+  </li>
+</ul>

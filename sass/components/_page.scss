@@ -4,19 +4,9 @@
  * Author: Alex Merry
  */
 
-/* default to the footer's bg, in case it's not actually at the bottom */
-body,
-html,
-#footer-container {
-  @include light-grey-on-dark-grey;
-  background-image: url("../images/footer.png");
-}
-
 /* the actual content defaults to dark grey on white */
 #page {
   @include grey-on-white;
 }
-
-
 
 // vim:sts=2:sw=2:et

@@ -50,7 +50,14 @@ Region settings: select content for summerton theme
 
 
 Title: (leave blank)
-Description: Footer
-Block body: footer.dpl
+Description: Footer navigation
+Block body: footer-nav.dpl
+Text format: Unfiltered HTML
+Region settings: select footer for summerton theme
+
+
+Title: (leave blank)
+Description: Footer social media
+Block body: footer-social-media.dpl
 Text format: PHP code
 Region settings: select footer for summerton theme

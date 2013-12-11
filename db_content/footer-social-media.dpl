@@ -1,0 +1,24 @@
+<div class="gwwc3footersm" style="float:right;">
+
+<div class="callout">
+<!-- <a href="https://twitter.com/givingwhatwecan"> Tweets by @givingwhatwecan</a> -->
+<style>
+.tweet { height: 100px; }
+.tweets-pulled-listing { padding-left: 0; }
+.tweet-author-wrapper { display: none; }
+.tweet-text a { color: Cyan; }
+.tweet-footer a { color: DarkCyan; }
+</style>
+<div class="tweet">
+<?php if (function_exists('twitter_pull_render')) { print twitter_pull_render('@givingwhatwecan', false, 1); } ?>
+</div>
+   <b class="notch"></b> 
+</div>
+<a id="twitterbird"></a> 
+<a id="facebook" href="http://www.facebook.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'Facebook'])"></a>
+<a id="twitter" href="http://twitter.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'Twitter'])">  </a>
+<a id="google" href="https://plus.google.com/102902731488831445362/about" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'Google Plus'])"></a>
+<a id="pinterest" href="http://pinterest.com/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'Pinterest'])"></a>
+<a id="youtube" href="http://www.youtube.com/user/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'YouTube'])"></a>
+
+</div>

@@ -7,10 +7,23 @@ extract zen
 git clone summerton into sites/all/themes
 git clone jQuery-Knob into summerton/js/knob
 
+Install the following modules by downloading the 7.x-x.x versions and
+extracting into sites/all/modules/contrib
+* CTools (https://drupal.org/project/ctools)
+* OAuth (https://drupal.org/project/oauth)
+* Views (https://drupal.org/project/views)
+* Twitter (https://drupal.org/project/twitter)
+* twitter_pull (https://drupal.org/project/twitter_pull) modules.
+
 Log in to Drupal; go to appearance
 Enable summerton as default theme
 
-Go to modules, enabled PHP filter module
+Go to modules, enable PHP filter module and twitter_pull module.  Configure
+the twitter module; you need to fill in the OAuth information in the
+"settings" tab (and uncheck the "import" checkbox at the top of that page).
+You will also need to add an authenticated twitter account (probably
+@givingwhatwecan).  Note that you will probably not be able to do this unless
+the site is accessible from the internet.
 
 Go to configuration->text formats
 Add "Unfiltered HTML" type with no filter options checked

@@ -26,28 +26,25 @@
   </li>
 </ul>
 
-
-<div class="gwwc3footersm" style="float:right;">
-
-<div class="callout">
-<!-- <a href="https://twitter.com/givingwhatwecan"> Tweets by @givingwhatwecan</a> -->
-<style>
-.tweet { height: 100px; }
-.tweets-pulled-listing { padding-left: 0; }
-.tweet-author-wrapper { display: none; }
-.tweet-text a { color: Cyan; }
-.tweet-footer a { color: DarkCyan; }
-</style>
-<div class="tweet">
-<?php if (function_exists('twitter_pull_render')) { print twitter_pull_render('@givingwhatwecan', false, 1); } ?>
-</div>
-   <b class="notch"></b> 
-</div>
-<a id="twitterbird"></a> 
-<a id="facebook" href="http://www.facebook.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'Facebook'])"></a>
-<a id="twitter" href="http://twitter.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'Twitter'])">  </a>
-<a id="google" href="https://plus.google.com/102902731488831445362/about" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'Google Plus'])"></a>
-<a id="pinterest" href="http://pinterest.com/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'Pinterest'])"></a>
-<a id="youtube" href="http://www.youtube.com/user/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - footer', 'YouTube'])"></a>
-
+<div id="footer-social-media">
+  <div class="tweet">
+    <?php if (function_exists('twitter_pull_render')) { print twitter_pull_render('@givingwhatwecan', false, 1); } ?>
+  </div>
+  <div class="buttonbar">
+    <span class="twitter-bird"></span>
+    <span class="twitter-notch"></span>
+<?php
+// alternative to the copy-paste of the social-media-links ul below:
+// $block = module_invoke('block', 'block_view', '4');
+// print render($block['content']);
+// where the number is the block number of the social-media-links block
+?>
+    <ul class="social-media-links">
+      <li class="first"><a class="facebook" title="Giving What We Can on Facebook" href="http://www.facebook.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Facebook'])">Facebook</a> </li>
+      <li><a class="twitter" title="Giving What We Can on Twitter" href="http://twitter.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Twitter'])">Twitter</a></li>
+      <li><a class="google" title="Giving What We Can on Google Plus" href="https://plus.google.com/102902731488831445362/about" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Google Plus'])">Google Plus</a></li>
+      <li><a class="pinterest" title="Giving What We Can on Pinterest" href="http://pinterest.com/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Pinterest'])">Pinterest</a></li>
+      <li class="last"><a class="youtube" title="Giving What We Can on YouTube" href="http://www.youtube.com/user/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'YouTube'])">YouTube</a></li>
+    </ul>
+  </div>
 </div>

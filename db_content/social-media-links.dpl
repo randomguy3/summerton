@@ -1,7 +1,7 @@
 <ul class="social-media-links">
-<li><a class="facebook first" href="http://www.facebook.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Facebook'])">Facebook</a></li>
-<li><a class="twitter" href="http://twitter.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Twitter'])">Twitter</a></li>
-<li><a class="google" href="https://plus.google.com/102902731488831445362/about" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Google Plus'])">Google Plus</a></li>
-<li><a class="pinterest" href="http://pinterest.com/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Pinterest'])">Pinterest</a></li>
-<li><a class="youtube last" href="http://www.youtube.com/user/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'YouTube'])">YouTube</a></li>
+  <li class="first"><a class="facebook" title="Giving What We Can on Facebook" href="http://www.facebook.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Facebook'])">Facebook</a> </li>
+  <li><a class="twitter" title="Giving What We Can on Twitter" href="http://twitter.com/givingwhatwecan" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Twitter'])">Twitter</a></li>
+  <li><a class="google" title="Giving What We Can on Google Plus" href="https://plus.google.com/102902731488831445362/about" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Google Plus'])">Google Plus</a></li>
+  <li><a class="pinterest" title="Giving What We Can on Pinterest" href="http://pinterest.com/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'Pinterest'])">Pinterest</a></li>
+  <li class="last"><a class="youtube" title="Giving What We Can on YouTube" href="http://www.youtube.com/user/givingwhatwecan/" onclick="_gaq.push(['_trackEvent', 'Click - '+find_region(this), 'YouTube'])">YouTube</a></li>
 </ul>

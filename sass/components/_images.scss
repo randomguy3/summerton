@@ -74,39 +74,39 @@
         height: 35px;
     }
 
-
+@import "compass/typography/text/replacement";
+@mixin set-bg-image-and-dimensions($img) {
+  background: {
+    @if is-url($img) {
+      image: $img;
+    }
+    @else {
+      image: image-url($img);
+    }
+  };
+  width: image-width($img);
+  height: image-height($img);
+}
 .social-media-links {
     a {
         background-repeat: no-repeat;
         display: inline-block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-indent: 110%;
+        @include hide-text;
     }
     a.twitter {
-        background-image: url("../images/social-media/posttwitterlogo.png");
-        width: image-width('social-media/posttwitterlogo.png');
-        height: image-height('social-media/posttwitterlogo.png');
+        @include set-bg-image-and-dimensions("social-media/posttwitterlogo.png");
     }
     a.facebook {
-        background-image: url("../images/social-media/postfacebook.png");
-        width: image-width('social-media/postfacebook.png');
-        height: image-height('social-media/postfacebook.png');
+        @include set-bg-image-and-dimensions("social-media/postfacebook.png");
     }
     a.youtube {
-        background-image: url("../images/social-media/postyoutube.png");
-        width: image-width('social-media/postyoutube.png');
-        height: image-height('social-media/postyoutube.png');
+        @include set-bg-image-and-dimensions("social-media/postyoutube.png");
     }
     a.google {
-        background-image: url("../images/social-media/postgoogle.png");
-        width: image-width('social-media/postgoogle.png');
-        height: image-height('social-media/postgoogle.png');
+        @include set-bg-image-and-dimensions("social-media/postgoogle.png");
     }
     a.pinterest {
-        background-image: url("../images/social-media/postpinterest.png");
-        width: image-width('social-media/postpinterest.png');
-        height: image-height('social-media/postpinterest.png');
+        @include set-bg-image-and-dimensions("social-media/postpinterest.png");
     }
 }
 

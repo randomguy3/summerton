@@ -2,7 +2,7 @@
 body,
 html,
 #footer-container {
-  background: #161614 url("../images/footer.png");
+  background: #161614 image-url("footer.png");
 }
 
 $footer-text-color: #5b5850;
@@ -51,196 +51,80 @@ $footer-text-color: #5b5850;
   text-align: center;
 }
 
+$twitter-background-color-fallback: #535352;
+$twitter-background-color: rgba(255,255,255,0.3);
+#footer-social-media {
+  float: right;
+  padding-top: 0.35em; // aim is to match top of menu text
+  width: 18em;
 
-/* footer */
-.gwwc3footersm {
-  padding-right: 26px;
-  
-      >#twitterbird {
-        background-image: url("../images/social-media/greytweetbird.png");
-        background-repeat: no-repeat;
-        display: inline-block;
-        float:left; 
-        margin-right: 6px;
-        height:26px; 
-        width:26px
+  .tweet {
+    min-height: 2em;
+    color: white;
+    padding: 0.75em 1.25em;
+    background-color: $twitter-background-color-fallback;
+    background-color: $twitter-background-color;
+    @include border-radius(0.3em);
+    .tweets-pulled-listing {
+      @include reset-box-model;
+      li {
+        @include no-bullet;
       }
-      >#twitter {
-        background-image: url("../images/social-media/posttwitterlogo.png");
-        background-repeat: no-repeat;
-        display: inline-block;
-        float:right; 
-        margin-right: 6px;
-        height:26px; 
-        width:26px
+    }
+    .tweet-text {
+      @include adjust-font-size-to( 0.8 * $base-font-size );
+      a, a:visited {
+        color: $brand-red-bg;
       }
-      #facebook{
-        background-image: url("../images/social-media/postfacebook.png");
-        background-repeat: no-repeat;
-        display: inline-block;
-        float:right; 
-        margin-right: 6px;
-        height:26px; 
-        width:26px
+    }
+    .tweet-footer {
+      @include adjust-font-size-to( 0.75 * $base-font-size );
+      font-style: italic;
+      a, a:visited {
+        color: black;
       }
-      #youtube{
-        background-image: url("../images/social-media/postyoutube.png");
-        background-repeat: no-repeat;
-        display: inline-block;
-        float:right; 
-        margin-right: 6px; 
-        height:26px; 
-        width:26px
-      }
-      #google{
-        background-image: url("../images/social-media/postgoogle.png");
-        background-repeat: no-repeat;
-        display: inline-block;
-        float:right; 
-        margin-right: 6px;
-        height:26px; 
-        width:26px
-      }
-      #pinterest{  
-        background-image: url("../images/social-media/postpinterest.png");
-        background-repeat: no-repeat;
-        display: inline-block;
-        float:right; 
-        margin-right: 6px;
-        height:26px; 
-        width:26px
-      }
-  
-}
-
-
-
-/* copyright */
-#block-block-21 {
-	text-align: center;
-	color: #655d54;
-	padding: 22px 0 54px;
-
-}
-
-/* Callout */
-.callout {
+    }
+    .tweet-author-wrapper, .tweet-actions {
+      display: none;
+    }
+  }
+  .buttonbar {
+    @include clearfix;
     position: relative;
-    margin: 10px 0 5px;
-    /*
-    padding: 5px 12px;
-    background-color: #404040;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    */
-	width: 286px;
+    padding-top: 1em;
+    .twitter-bird {
+      display: inline-block;
+      background-image: image-url("social-media/greytweetbird.png");
+      background-repeat: no-repeat;
+      height: image-height("social-media/greytweetbird.png"); 
+      width: image-width("social-media/greytweetbird.png"); 
+    }
+    .twitter-notch {
+      //display: none;
+      position: absolute;
+      top: 0px;
+      left: image-width("social-media/greytweetbird.png") + 4px;
+      margin: 0;
+      border-top: 20px solid $twitter-background-color-fallback;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 0 solid $twitter-background-color-fallback;
+      padding: 0;
+      width: 0;
+      height: 0;
+      /* ie6 height fix */
+      font-size: 0;
+      line-height: 0;
+       /* ie6 transparent fix */
+      _border-right-color: pink;
+      _border-left-color: pink;
+      _filter: chroma(color=pink);
+    }
+  }
+  .social-media-links {
+    float: right;
+  }
 }
 
-
-.callout ul,
-.callout li
- {
-	height: 100px;
-
-}
-
-.callout .notch {
-    position: absolute;
-    top: 109px;
-    left: 30px;
-    margin: 0;
-    border-top: 10px solid #404040;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 0 solid #404040;
-    padding: 0;
-    width: 0;
-    height: 0;
-    /* ie6 height fix */
-    font-size: 0;
-    line-height: 0;
-     /* ie6 transparent fix */
-    _border-right-color: pink;
-    _border-left-color: pink;
-    _filter: chroma(color=pink);
-}
-
-/* Background Color */
-.tb2 {
-	background-color : #580000;
-	border: 1px solid #008000;
-	/*width: 230px;*/
-	height: 40px;
-	text-align:center;
-	vertical-align: middle; 
-}
-
-.tb2 a {
-display: block;
-height: 100%;
-width: 100%;
-}
-
-.tweet {
-        color: white;
-        font-size: 0.75em;
-        line-height: 1.5em;
-	width: 261px;
-/*	height: 100px;*/
-
-    padding: 5px 12px;
-    background-color: #404040;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-}
-
-.query {
-        color: white;
-        font-size: 0.75em;
-}
-
-        .tweet_list {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                overflow-y: hidden;
-        }
-
-                .tweet_list li {
-                        overflow-y: auto;
-                        overflow-x: hidden;
-                        padding: 0.5em;
-                        list-style-type: none;
-                }
-
-                        .tweet_list li a {
-                                color: #00FFFF;
-                        }
-
-                .tweet_list .tweet_even {
-                        background-color:#404040;
-                }
-
-                .tweet_list .tweet_avatar {
-                        padding-right: .5em; float: left;
-                }
-
-                        .tweet_list .tweet_avatar img {
-                                vertical-align: middle;
-                        }
-                              
-		.tweet .tweet_list .tweet_time {
-		display: block;
-		padding-top: 3px;
-		}
-			.tweet .tweet_list .tweet_time a {
-			color: black;
-			}
-			
-		.tweet .tweet_list .tweet_text {
-		line-height: 1em;
-		}
 
 // vim:sts=2:sw=2:et

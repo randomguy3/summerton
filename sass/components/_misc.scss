@@ -718,7 +718,7 @@ ul.social-media-links {
     /* make sure it is no higher than the contained link image */
     line-height: 0;
   }
-  li.last {
+  li.last, li:last-child {
     margin-right: 0;
   }
 }

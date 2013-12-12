@@ -59,9 +59,12 @@
 #navigation {
   @include grey-on-white;
 
-  #main-menu {
-    letter-spacing: 0.1ex;
+  #main-menu li {
     text-transform: uppercase;
+    letter-spacing: 0.1ex;
+    &.last, &:last-child {
+      margin-right: -0.1ex;
+    }
   }
 }
 

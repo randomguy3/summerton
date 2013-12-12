@@ -118,6 +118,8 @@ $results['richtimes'] = 24;
                 jQuery('#percentage').text(ui.value);
                 jQuery('.knob').val(100-ui.value);
                 jQuery('.knob').trigger('change');
+                window.wealthCalculator.donationAmount = ui.value; 
+                window.wealthCalculator.updateWealth();
             }
         });
     });
@@ -138,32 +140,51 @@ $results['richtimes'] = 24;
        jQuery.getScript("/sites/all/themes/summerton/templates/calculator/howrichmaths.js", function(){
       });
     });
-  function calculateWealth(){
-      var country = jQuery("#calc-howrich-country option:selected").val();
-      var income =  jQuery("#calc-howrich-incomenumber").val();
-      var adult = jQuery("#calc-howrich-householdsize-adult").val();
-      var child = jQuery("#calc-howrich-householdsize-child").val();
-      var richFactorNum = 0;
-      income = equivaliseIncome(income, adult, child); 
-      income = convertCurrency(income, country);
-      income = convertIntoPpp(income, country);
-      income = convertTo2008(income);
-      income = incomeTooHigh(income);
-      income = incomeTooLow(income);
-      richFactorNum = richFactor(income);
-      richPercentageNum = richPercentage(income);
-      jQuery("#richpercent").text(richPercentageNum.toFixed(1));
-      jQuery("#richtimes").text(richFactorNum.toFixed(1));
-   };
+    jQuery(function(){
+      window.wealthCalculator = new wealthCalculator("US", 0, 1, 0);
+    });
+    function wealthCalculator(country, income, adult, child) {
+      this.country = country;
+      this.grossIncome = income;
+      this.adult = adult;
+      this.child = child;
+      this.richFactorNum = 0;
+      this.donationAmount = 0;
+      this.updateWealth=updateWealth;
+      function updateWealth(){
+        this.country = jQuery("#calc-howrich-country option:selected").val();
+        this.grossIncome =  jQuery("#calc-howrich-incomenumber").val();
+        this.adult = jQuery("#calc-howrich-householdsize-adult").val();
+        this.child = jQuery("#calc-howrich-householdsize-child").val();
+      }
+      this.calculateWealth=calculateWealth;
+      function calculateWealth(){
+        var income = equivaliseIncome(this.grossIncome, this.adult, this.child); 
+        income = convertCurrency(income, this.country);
+        income = convertIntoPpp(income, this.country);
+        income = convertTo2008(income);
+        income = incomeTooHigh(income);
+        income = incomeTooLow(income);
+        income = income*((100-this.donationAmount)/100);
+        richFactorNum = richFactor(income);
+        richPercentageNum = richPercentage(income);
+        updateDisplay(richFactorNum, richPercentageNum);
+     }
+   }
 
   function showResults(){
     jQuery("#results").show();
    } 
   function calculateResults(){
-    calculateWealth();
+    window.wealthCalculator.updateWealth();
+    window.wealthCalculator.calculateWealth();
     showResults();
   }
   function updateCurrency(){
     jQuery(":button").text(getCurrency(jQuery("#calc-howrich-country option:selected").val()));
+  }
+  function updateDisplay(richFactorNum, richPercentageNum){
+      jQuery("#richpercent").text(richPercentageNum.toFixed(1));
+      jQuery("#richtimes").text(richFactorNum.toFixed(1));
   }
 </script>

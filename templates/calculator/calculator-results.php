@@ -86,7 +86,7 @@ $results['richtimes'] = 24;
               <div class="round-box red">
                   <p> If you were to donate <span id="percentage">10</span>% of your income: </p>  
                   <div id="slider"></div>
-                  <p> You would still be in the richest <?php echo $results['richpercent']; ?>%  of the world's population. Your income would still be more than <?php echo $results['richtimes']; ?> times the global average. </p>
+                  <p> You would still be in the richest <span id="netRichPercent">100</span>  of the world's population. Your income would still be more than <span id="netRichTimes">0</span>times the global average. </p>
                   <p class="bold" > And with your donation, every year... </p> 
               </div>
                   <b class="notch"></b> 
@@ -119,7 +119,7 @@ $results['richtimes'] = 24;
                 jQuery('.knob').val(100-ui.value);
                 jQuery('.knob').trigger('change');
                 window.wealthCalculator.donationAmount = ui.value; 
-                window.wealthCalculator.updateWealth();
+                window.wealthCalculator.potentialWealth();
             }
         });
     });
@@ -149,8 +149,11 @@ $results['richtimes'] = 24;
       this.adult = adult;
       this.child = child;
       this.richFactorNum = 0;
-      this.donationAmount = 0;
+      this.donationAmount = 10;
       this.updateWealth=updateWealth;
+      this.richFactorNum = 0;
+      this.income = 0;
+      this.richPercentageNum = 0;
       function updateWealth(){
         this.country = jQuery("#calc-howrich-country option:selected").val();
         this.grossIncome =  jQuery("#calc-howrich-incomenumber").val();
@@ -159,16 +162,21 @@ $results['richtimes'] = 24;
       }
       this.calculateWealth=calculateWealth;
       function calculateWealth(){
-        var income = equivaliseIncome(this.grossIncome, this.adult, this.child); 
-        income = convertCurrency(income, this.country);
-        income = convertIntoPpp(income, this.country);
-        income = convertTo2008(income);
-        income = incomeTooHigh(income);
-        income = incomeTooLow(income);
-        income = income*((100-this.donationAmount)/100);
-        richFactorNum = richFactor(income);
-        richPercentageNum = richPercentage(income);
-        updateDisplay(richFactorNum, richPercentageNum);
+        this.income = equivaliseIncome(this.grossIncome, this.adult, this.child); 
+        this.income = convertCurrency(this.income, this.country);
+        this.income = convertIntoPpp(this.income, this.country);
+        this.income = convertTo2008(this.income);
+        this.income = incomeTooHigh(this.income);
+        this.income = incomeTooLow(this.income);
+        this.income = this.income*((100-this.donationAmount)/100);
+        this.richFactorNum = richFactor(this.income);
+        this.richPercentageNum = richPercentage(this.income);
+        updateDisplay(this.richFactorNum, this.richPercentageNum);
+     }
+     this.potentialWealth = potentialWealth;
+     function potentialWealth(){
+        this.potentialIncome = this.income*((100-this.donationAmount)/100);
+        updatePotentialDisplay(richFactor(this.potentialIncome), richPercentage(this.potentialIncome));
      }
    }
 
@@ -178,6 +186,7 @@ $results['richtimes'] = 24;
   function calculateResults(){
     window.wealthCalculator.updateWealth();
     window.wealthCalculator.calculateWealth();
+    window.wealthCalculator.potentialWealth();
     showResults();
   }
   function updateCurrency(){
@@ -186,5 +195,9 @@ $results['richtimes'] = 24;
   function updateDisplay(richFactorNum, richPercentageNum){
       jQuery("#richpercent").text(richPercentageNum.toFixed(1));
       jQuery("#richtimes").text(richFactorNum.toFixed(1));
+  }
+  function updatePotentialDisplay(richFactor, richPercentage){
+    jQuery("#netRichPercent").text(richPercentage.toFixed(1));
+    jQuery("#netRichTimes").text(richFactor.toFixed(1));
   }
 </script>

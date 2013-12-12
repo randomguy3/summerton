@@ -120,7 +120,7 @@ var medianIncome = 1480;
 // Setup relationship between money and population
 var centileArray = [0,0.1,0.23,0.96,2,2.89,3.26,3.67,6.48,10.38,14.72,19.08,27.05,33.72,39.24,43.72,47.42,50.53,53.21,55.56,57.57,59.39,61.02,63.88,66.25,68.27,70,71.55,73.42,74.95,76.23,77.25,78.09,78.8,79.59,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,99.9];
 var incomeArray = [0,12.72,63.6,127.2,190.8,228.96,241.68,254.4,318,381.6,445.2,508.8,636,763.2,890.4,1017.6,1144.8,1272,1399.2,1526.4,1653.6,1780.8,1908,2162.4,2416.8,2671.2,2925.6,3180,3561.6,3943.2,4324.8,4706.4,5088,5469.6,5978.4,6431,6949,7549,8120,8826,9506,10402,11245,12164,13323,14447,15644,17093,18307,20383,22632,25401,29491,35472,46822,70000];
-var minDollarToCalc = incomeArray[centileArray.indexOf(80)]+1;
+var minDollarToCalc = incomeArray[centileArray.indexOf(0)]+1;
 var maxDollarToCalc = incomeArray[centileArray.indexOf(99)]-1;
 var veryMaxDollarToCalc=incomeArray[incomeArray.length-1]-1;
 
@@ -236,25 +236,25 @@ function richPercentage(income){
     
   // calculate percentage 
   var percentRicher = 100 - percentPoorer;
-      
-  var strOutput = percentRicher.toFixed(1);
 
+  return percentRicher;
+
+}
+
+function incomeTooLow(income) {
   if (income < minDollarToCalc)
-  { // no output if income too low
-    jQuery("#howrich-error").show();
-  } 
-  else if (income > maxDollarToCalc )
-  {  // roughened output if income too high
-    jQuery("#howrich-error").show();
-    if(income>veryMaxDollarToCalc){
-      strOutput="0.1";
-      percentPoorer=99.9;
-    }
+  {
+    return minDollarToCalc;
   }
-
-  return [strOutput,percentPoorer];
-
-};
+  return income;
+}
+function incomeTooHigh(income) {
+  if (income >maxDollarToCalc)
+  {
+    return maxDollarToCalc;
+  }
+  return income;
+}
 
 function equivaliseIncome(income, adult, child) {
   income = income / ((adult==1?1:0.3+adult*0.7)+(child/2));
@@ -276,19 +276,23 @@ function convertTo2008(income) {
   return income;
 }
 
-function richFactor(income)
-  var richFactor=(income/medianIncome).toFixed(0);
-  return richFactor;
+function richFactor(income){
+  var multiple=(income/medianIncome);
+  return multiple;
+}
+function getCurrency(country) {
+  var currency=nationalCurrency[country];
+  return currency;
 }
 
 
   //"what if you donated..." section
-  jQuery("#howrich-donationpercentagedisplay").html(jQuery("#howrich-donationpercentage").val());
-  var donation=numval(jQuery("#howrich-income").val())*numval(jQuery("#howrich-donationpercentage").val())*currencyFactor[nationalCurrency[country]]/100;
-  jQuery("#howrich-lives").html(customRound(donation/pricePerLifeSaved));
-  jQuery("#howrich-dalys").html(customRound(donation/pricePerDALY));
-  jQuery("#howrich-schoolyears").html(customRound(donation/pricePerSchoolYear));
-};
+//  jQuery("#howrich-donationpercentagedisplay").html(jQuery("#howrich-donationpercentage").val());
+//  var donation=numval(jQuery("#howrich-income").val())*numval(jQuery("#howrich-donationpercentage").val())*currencyFactor[nationalCurrency[country]]/100;
+//  jQuery("#howrich-lives").html(customRound(donation/pricePerLifeSaved));
+//  jQuery("#howrich-dalys").html(customRound(donation/pricePerDALY));
+//  jQuery("#howrich-schoolyears").html(customRound(donation/pricePerSchoolYear));
+//};
 
 function customRound(n){
   return (n<10?n.toPrecision(2):n.toFixed(0))*1;

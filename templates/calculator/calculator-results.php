@@ -7,10 +7,6 @@ drupal_add_library('system', 'ui.slider');
 
 $results['richpercent'] = 21;
 $results['richtimes'] = 24;
-$income = 0;
-$country = "GBR";
-$adult = 1;
-$child = 0;
 /* 
  * Calculator: Template theme used in summerton
  *
@@ -24,7 +20,7 @@ $child = 0;
     <div class="container justify grey">
         <div class="container inline">
             <label for="country">Location</label>
-            <select name="country" onChange="selectcurrency(this.value)" id="calc-howrich-country" class="calcselect">
+            <select name="country" onChange="updateCurrency()" id="calc-howrich-country" class="calcselect">
                     <option value="AU"> Australia </option>
                     <option value="AT"> Austria </option>
                     <option value="BE"> Belgium </option>
@@ -63,15 +59,15 @@ $child = 0;
         </div>
         <div class="container inline"> 
             <label for "income">Annual Income</label>
-            <input  id="calc-howrich-page-incomenumber" class="long" type="text" name="annualIncome" size="6" onchange="this.value=formatNumber(this.value,0,0);" onkeypress="if(event.keyCode==13){howRichGWWC3(); _gaq.push(['_trackEvent', 'Click - /node/447', ' How Rich - Calculate']);}" /> 
-            <button disabled>GBP</button>
+            <input  id="calc-howrich-incomenumber" class="long" type="text" name="annualIncome" size="6" /> 
+            <button name="currency" disabled>USD</button>
         </div> 
         <div class="container inline">
             <label for"household_size">People in your household</label>
             Adults 
-            <input disabled id="calc-howrich-page-householdsize-adult" class="short" name="householdSizeAdult" value="1" onkeypress="if(event.keyCode==13){howRichGWWC3(); _gaq.push(['_trackEvent', 'Click - /node/447', ' How Rich - Calculate']);}" /> 
+            <input id="calc-howrich-householdsize-adult" class="short" name="householdSizeAdult" value="1" /> 
             Children
-            <input disabled id="calc-howrich-page-householdsize-child" class="short" type="text" name="householdSizeChild" value="0" onkeypress="if(event.keyCode==13){howRichGWWC3(); _gaq.push(['_trackEvent', 'Click - /node/447', ' How Rich - Calculate']);}" />
+            <input id="calc-howrich-householdsize-child" class="short" type="text" name="householdSizeChild" value="0"  />
         </div>
         <div class="stretch"></div>
     </div>
@@ -82,8 +78,8 @@ $child = 0;
     </div>
   <div id="results">
        <div class="results center tcenter">
-          <p> You are in the richest <span id="richpercent" class="red bold"><?php echo $results['richpercent']; ?>%</span> of the world's population. <br>
-              Your income is <?php echo ($results['richtimes'] > 1)? 'more':'less' ?> than <span class="redbold"><?php echo $results['richtimes']; ?>%</span> of the global average. </p>
+          <p> You are in the richest <span class="red bold"><span id="richpercent">0</span>%</span> of the world's population. <br>
+              Your income is more than <span class="red bold"> <span id="richtimes">0</span> times</span> the global average. </p>
       </div>
       <div class="container center tcenter">
           <div class="container inline middle">
@@ -111,7 +107,7 @@ $child = 0;
       </div>   
   </div>
 </div>
-
+<script src="/sites/all/themes/summerton/templates/calculator/howrichmaths.js"></script>
 <script>
     jQuery(function() {
         jQuery('#slider').slider({
@@ -139,22 +135,25 @@ $child = 0;
     });
 
     jQuery(function(){
-       jQuery.getScript("<?php global $base_url; echo ($base_url."/sites/all/themes/summerton/templates/calculator/calculator.js") ?>", function(){
-       calculateWealth();
+       jQuery.getScript("/sites/all/themes/summerton/templates/calculator/howrichmaths.js", function(){
       });
     });
-    function calculateWealth(){
-      var country = '<?php echo $country ?>';
-      var income = <?php echo $income ?>;
-      var adult = <?php echo $adult?>;
-      var child = <?php echo $child?>;
-      var richFactor = 0;
+  function calculateWealth(){
+      var country = jQuery("#calc-howrich-country option:selected").val();
+      var income =  jQuery("#calc-howrich-incomenumber").val();
+      var adult = jQuery("#calc-howrich-householdsize-adult").val();
+      var child = jQuery("#calc-howrich-householdsize-child").val();
+      var richFactorNum = 0;
       income = equivaliseIncome(income, adult, child); 
       income = convertCurrency(income, country);
       income = convertIntoPpp(income, country);
       income = convertTo2008(income);
-      richFactor = richFactor(income);
-      jQuery('#richpercent').text("0");
+      income = incomeTooHigh(income);
+      income = incomeTooLow(income);
+      richFactorNum = richFactor(income);
+      richPercentageNum = richPercentage(income);
+      jQuery("#richpercent").text(richPercentageNum.toFixed(1));
+      jQuery("#richtimes").text(richFactorNum.toFixed(1));
    };
 
   function showResults(){
@@ -163,5 +162,8 @@ $child = 0;
   function calculateResults(){
     calculateWealth();
     showResults();
-}
+  }
+  function updateCurrency(){
+    jQuery(":button").text(getCurrency(jQuery("#calc-howrich-country option:selected").val()));
+  }
 </script>

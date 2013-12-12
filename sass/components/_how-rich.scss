@@ -1,0 +1,22 @@
+.how-rich {
+  .banner{
+    background-color:$gwwc-page-bg-shaded;
+    text-align: justify;
+    padding: 10px;
+  }
+  .calcselect{
+  background-color:$gwwc-page-bg-shaded;
+  }
+  label {
+    color: $brand-grey-fg;
+  }
+  select {
+    color: $brand-red-bg;
+  }
+  button {
+    color: $brand-red-bg;
+  }
+  textarea{
+    color: $brand-red-bg;
+  }
+}

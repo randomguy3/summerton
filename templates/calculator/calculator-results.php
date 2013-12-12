@@ -13,13 +13,15 @@ $results['richtimes'] = 24;
  *
  */
 ?>
-<div class="container calculator">
+<div class="container calculator how-rich">
     <div class="content-header">
         <h1> How rich am I?</h1>
     </div>
-    <div class="container justify grey">
+    <div class="container banner">
         <div class="container inline">
             <label for="country">Location</label>
+        </div>
+        <div class="container inline">
             <select name="country" onChange="updateCurrency()" id="calc-howrich-country" class="calcselect">
                     <option value="AU"> Australia </option>
                     <option value="AT"> Austria </option>
@@ -59,11 +61,15 @@ $results['richtimes'] = 24;
         </div>
         <div class="container inline"> 
             <label for "income">Annual Income</label>
+        </div>
+        <div class="container inline">
             <input  id="calc-howrich-incomenumber" class="long" type="text" name="annualIncome" size="6" /> 
             <button name="currency" disabled>USD</button>
         </div> 
         <div class="container inline">
             <label for"household_size">People in your household</label>
+        </div>
+        <div class="container inline">
             Adults 
             <input id="calc-howrich-householdsize-adult" class="short" name="householdSizeAdult" value="1" /> 
             Children
@@ -71,7 +77,7 @@ $results['richtimes'] = 24;
         </div>
         <div class="stretch"></div>
     </div>
-    <div class="container justify grey">
+    <div class="container banner">
       <div class="container inline">
         <input type="submit" onclick="calculateResults()">
       </div>

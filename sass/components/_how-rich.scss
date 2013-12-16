@@ -1,20 +1,67 @@
-.how-rich {
+  .donation-selector{
+    position:relative;
+    margin-top:100px;
+    display:table;
+  }
+  .donation-text-box{
+    position:relative;
+    display:table-cell;
+    width: 50%;
+    border-top-left-radius:0%;
+    border-top-right-radius:0%;
+    background-color:$gwwcred;
+    color:white;
+    border-top-left-radius:1%;
+    border-bottom-left-radius:1%;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    padding: 5px 12px;
+  }
+  .outer-dial-container{
+    position:relative;
+    display:table-cell;
+    left: -160px;
+  }
+  .right-decoration{
+    background-color:$gwwcred;
+    width:50px;
+    height:100%;
+    z-index:10;
+    position:absolute;
+  }
+  .dial-circularmargin{
+    left:5px;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background-color:white;
+    z-index:20;
+    position:absolute;
+    top:-30px;
+  }
+  .inner-dial-container{
+    left:10px;
+    z-index:30;
+    position:absolute;  
+    top:-30px;
+  }
+.how-rich{
   .banner{
     background-color:$gwwc-page-bg-shaded;
     text-align: justify;
-    padding: 10px;
+    padding: 40px 40px 0px;
   }
   .calcselect{
   background-color:$gwwc-page-bg-shaded;
+  border: none;
   }
   label {
     color: $brand-grey-fg;
   }
-  select {
+  select, input {
     color: $brand-red-bg;
-  }
-  button {
-    color: $brand-red-bg;
+    border: none;
+    font-weight:bold;
   }
   textarea{
     color: $brand-red-bg;

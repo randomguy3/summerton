@@ -161,7 +161,7 @@
   @include background-image(linear-gradient(bottom, $tabs-border 1px, transparent 1px));
   /* IE 9 and earlier don't understand gradients. */
   list-style: none;
-  border-bottom: 1px solid $tabs-border \0/ie;
+  border-bottom: 1px solid $tabs-border ;
   margin: 0 0 rhythm(1) 0;
   padding: rhythm(1) 2px 0 2px;
   white-space: nowrap;
@@ -190,7 +190,7 @@
   border: 1px solid $tabs-border;
   border-bottom-color: transparent;
   /* IE 9 and earlier don't understand gradients. */
-  border-bottom: 0 \0/ie;
+  border-bottom: 0;
 }
 .tabs-primary__tab.is-active {
   @extend .tabs-primary__tab;
@@ -524,7 +524,7 @@ label.option {
 
 /* Buttons used by contrib modules like Media. */
 a.button {
-  @include appearance(button);
+  /*@include appearance(button);*/
 }
 
 /* Password confirmation. */

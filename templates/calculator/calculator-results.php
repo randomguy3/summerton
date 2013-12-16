@@ -19,10 +19,10 @@ $results['richtimes'] = 24;
     </div>
     <div class="container banner">
         <div class="container inline">
-            <label for="country">Location</label>
+            <label for="country">Location:</label>
         </div>
         <div class="container inline">
-            <select name="country" onChange="updateCurrency()" id="calc-howrich-country" class="calcselect">
+            <select name="country" onChange="updateCurrency(); calculateResults()" id="calc-howrich-country" class="calcselect">
                     <option value="AU"> Australia </option>
                     <option value="AT"> Austria </option>
                     <option value="BE"> Belgium </option>
@@ -60,57 +60,56 @@ $results['richtimes'] = 24;
                 </select> 
         </div>
         <div class="container inline"> 
-            <label for "income">Annual Income</label>
+            <label for "income">Annual Income:</label>
         </div>
         <div class="container inline">
-            <input  id="calc-howrich-incomenumber" class="long" type="text" name="annualIncome" size="6" /> 
+            <input  id="calc-howrich-incomenumber" class="long" type="text" name="annualIncome" size="6" onchange="calculateResults()" /> 
             <button name="currency" disabled>USD</button>
         </div> 
         <div class="container inline">
-            <label for"household_size">People in your household</label>
+            <label for"household_size">People in your household:</label>
         </div>
         <div class="container inline">
-            Adults 
-            <input id="calc-howrich-householdsize-adult" class="short" name="householdSizeAdult" value="1" /> 
-            Children
-            <input id="calc-howrich-householdsize-child" class="short" type="text" name="householdSizeChild" value="0"  />
+            Adults:  
+            <input id="calc-howrich-householdsize-adult" class="short" name="householdSizeAdult" value="1" onchange="calculateResults()" /> 
+            Children:  
+            <input id="calc-howrich-householdsize-child" class="short" type="text" name="householdSizeChild" value="0" onchange="calculateResults()"/>
         </div>
         <div class="stretch"></div>
-    </div>
-    <div class="container banner">
       <div class="container inline">
-        <input type="submit" onclick="calculateResults()">
       </div>
     </div>
+  </div>
   <div id="results">
-       <div class="results center tcenter">
-          <p> You are in the richest <span class="red bold"><span id="richpercent">0</span>%</span> of the world's population. <br>
-              Your income is more than <span class="red bold"> <span id="richtimes">0</span> times</span> the global average. </p>
+    <div class="results center tcenter">
+      <p class="page-leader"> You are in the richest <span class="red bold"><span id="richpercent">0</span>%</span> of the world's population. <br>
+      Your income is more than <span class="red bold"> <span id="richtimes">0</span> times</span> the global average. </p>
       </div>
-      <div class="container center tcenter">
-          <div class="container inline middle">
-              <div class="round-box red">
-                  <p> If you were to donate <span id="percentage">10</span>% of your income: </p>  
-                  <div id="slider"></div>
-                  <p> You would still be in the richest <span id="netRichPercent">100</span>  of the world's population. Your income would still be more than <span id="netRichTimes">0</span>times the global average. </p>
-                  <p class="bold" > And with your donation, every year... </p> 
-              </div>
-                  <b class="notch"></b> 
-              </div>
-          <div class="container inline middle">
-              <input data-readonly="true" type="text" value="90" class="knob" data-width="300" data-height="300" data-max="100" data-min="0" data-fgcolor="#ffa800">
+    <div class="donation-selector">
+      <div class="donation-text-box">
+       <p class="bold"> If you were to donate <span id="percentage">10</span>% of your income: </p>  
+       <div id="slider"></div>
+       <p> You would still be in the richest <span id="netRichPercent">100</span>  of the world's population. Your income would still be more than <span id="netRichTimes">0</span>times the global average. </p>
+       <p class="bold" > And with your donation, every year... </p>
+       </div>
+       <b class="notch"></b>
+       <div class="outer-dial-container">
+         <div class="right-decoration"> </div>
+         <div class="dial-circularmargin"> </div>
+         <div class="inner-dial-container">
+           <input data-readonly="true" type="text" value="90" class="knob" data-width="300" data-height="300" data-max="100" data-min="0" data-fgcolor="#ffa800" data-bgcolor="rgb(108,0,0)" data-linecap="round">
           </div>
+        <b class="notch">
+        </div>
       </div>
-      <div class="container center tcenter">
-          <div class="container inline">
-              <?php include path_to_theme()."/templates/sharing/socialshare.php" ?>
-          </div>
+    <div class="container center tcenter">
+      <div class="container inline">
+        <?php include path_to_theme()."/templates/sharing/socialshare.php" ?>
+        </div>
       </div>
-  
-      <div class="container" id="AMF">
-      </div>
-      <div class="container" id="SCI">
-      </div>   
+    <div class="container" id="AMF"> </div>
+    <div class="container" id="SCI"> </div>   
+    </div>
   </div>
 </div>
 <script src="/sites/all/themes/summerton/templates/calculator/howrichmaths.js"></script>
@@ -139,7 +138,7 @@ $results['richtimes'] = 24;
     });
 
     jQuery(function() {
-      jQuery("#results").hide();
+      //jQuery("#results").hide();
     });
 
     jQuery(function(){

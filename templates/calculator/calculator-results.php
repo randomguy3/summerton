@@ -191,7 +191,7 @@ $results['richtimes'] = 24;
   function showResults(){
     jQuery(".donation-text-box").css('visibility','visible').hide().fadeIn('slow');
     jQuery(".right-decoration").css('visibility','visible').hide().fadeIn('slow');
-    fadeInFront();
+    var delay = setInterval(function(){clearInterval(delay);fadeInFront();},500);
    } 
   function calculateResults(){
     window.wealthCalculator.updateWealth();
@@ -220,8 +220,8 @@ $results['richtimes'] = 24;
       var timer = setInterval(function(){
       jQuery('.knob.back').val(i);
       jQuery('.knob.back').trigger('change');
-      if (i < 100-window.wealthCalculator.richPercentageNum) { i = i+1;} else {clearInterval(timer); showResults();}
-      },100 );
+      if (i < 100-window.wealthCalculator.richPercentageNum) { i = i+1;} else {clearInterval(timer); var delay = setInterval(function(){clearInterval(delay); showResults();},500);}
+      },10 );
   }
   function fadeInFront(){
       var i = 0;
@@ -229,6 +229,6 @@ $results['richtimes'] = 24;
       jQuery('.knob.front').val(i);
       jQuery('.knob.front').trigger('change');
       if (i < 100-richPercentage(window.wealthCalculator.potentialIncome)) { i = i+1;} else {clearInterval(timer);}
-      },100 );
+      },10 );
   }
 </script>

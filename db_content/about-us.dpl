@@ -1,0 +1,45 @@
+<div class="about-us">
+  <div class="wideblock even tcenter" id="about-us_wideimage"></div>
+
+  <div class="wideblock even">
+    <div class="container">
+      <div class="left container text" style="width:40%">
+        <p>Giving What We Can is an international society dedicated to eliminating extreme poverty. Our members and supporters are united in the belief that <span class="red">extreme poverty is one of the biggest problems in the world today,</span> and we are determined to do something about it.</p>
+        <h3 class="red"> "Throughout my career, I have given to causes that address the pressing issue of global poverty. Giving has enriched my life."</h3>
+        <p class="caption"> Dr Frederick Mulder CBE, founder of The Funding Network.</p>
+      </div>
+      <div class="left container text" style="width:40%">
+        <p>For those of use living in the developed world, our comparitive wealth gives us an amazing oppurtunity to make a real difference. That is why our members take a pledge committing us to donate at least 10% of our incomes to relieving suffering caused by extreme poverty.</p>
+        <p>It is critical that we donate to the most effective charities, so that it will have the greatest impact possible. To that end, Giving What We can undertakes research into the most effective interventions in the developing world. It turns out that the difference between charities is astounding: Some do 1,000 times as much good with their donation as others!</p>
+      </div>
+    </div>
+
+
+
+
+    <div class="wideblock odd justify">
+      <div class="content-block">
+        <div class="center">
+          <div class="container inline">
+            <div class="circular" id="CEAteam"></div>
+            <h3 class="tcenter"> 373 Members </h3>
+            <p class="caption"> All of our members are dedicated to eradicating poverty in the developing world, yet they come from numerous diverse background and professions. </p>
+            </br>
+         </div>
+         <div class="container inline">
+           <div class="circular inline" id="waterkid"></div>
+           <h3 class="tcenter"> Recommended Charities </h3>
+           <p class="caption"> By giving in the right way, you can increase the effect of your giving significantly, and make it more likely that you'll carry on giving in the long term. </p>
+           </br>
+         </div>
+         <div class="container inline">
+           <div class="circular inline" id="CEAteamb"></div>
+           <h3 class="tcenter"> Methodology </h3>
+           <p class="caption"> Your choice of charity is very important. By choosing carefully you can get much more impact from your donation and thereby help many more people. </p>
+          </br>
+        </div>
+        <div class="stretch"></div>
+      </div>
+    </div>
+  </div>
+</div>

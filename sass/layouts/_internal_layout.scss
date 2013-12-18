@@ -73,19 +73,18 @@ div .wideblock {
 }
 
 
-$radius: 260px;
+$radius: 220px;
 
 div.circular {
     width:$radius;
     height:$radius;
-    border-radius: $radius/2;
-    -webkit-border-radius: $radius/2;
-    -moz-border-radius: $radius/2;;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    border-radius: ($radius/2)+20;
+    -webkit-border-radius: $radius/2+20;
+    -moz-border-radius: $radius/2+20;
     margin-bottom: 20px;
-
+    border-width:10px;
+    border-color:white;
+    border-style:solid;
 }
 
 p.caption {

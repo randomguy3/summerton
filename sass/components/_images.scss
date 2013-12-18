@@ -26,7 +26,11 @@
     display:inline-block;
     background-repeat: no-repeat;
 }
-
+#about-usimage {
+  display:inline-block;
+  max-width:100%;
+  height:auto;
+}
 
 #waterkid {
     background-image: url('../images/wideblocks/waterkid.png');
@@ -34,15 +38,18 @@
 }
 
 #CEAteam {
-    background-image: url('../images/wideblocks/CEAteam.png');
+    background-image: url('../images/wideblocks/CEAteam.jpg');
     background-repeat: no-repeat;
 }
 
 #CEAteamb {
-    background-image: url('../images/wideblocks/CEAteamb.png');
+    background-image: url('../images/wideblocks/CEAteamb.jpg');
     background-repeat: no-repeat;
 }
-
+#History {
+    background-image: url('../images/wideblocks/history.jpg');
+    background-repeat: no-repeat;
+}
     #guardian {
         content: url("../images/mediabar/theguardianlogo.png");    
         background-repeat: no-repeat;

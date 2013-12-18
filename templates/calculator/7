@@ -101,7 +101,7 @@ $results['richtimes'] = 24;
                 <input data-readonly="true" type="text" value="0" class="knob front" data-width="300" data-height="300" data-max="100" data-min="0" data-fgcolor="#ffa800" data-bgcolor="rgba(0,0,0,0)" data-linecap="round" angleArc="360">
               </div>
               <div class="back-dial-container">
-                <input data-readonly="true" type="text" value="0" class="knob back" data-width="300" data-height="300" data-max="100" data-min="0" data-fgcolor="rgb(108,0,0)" data-bgcolor="rgba(0,0,0,0)" data-linecap="round" angleArc="360" >  
+                <input data-readonly="true" type="text" value="0" class="knob back" data-width="300" data-height="300" data-max="100" data-min="0" data-fgcolor="rgb(108,0,0)" data-bgcolor="rgba(0,0,0,0)" data-linecap="round" angleArc="360">  
               <b class="notch">
             </div>
           </div>
@@ -143,7 +143,6 @@ $results['richtimes'] = 24;
     jQuery(function() {
       fadeInBack();
     });
-    jQuery("#
 
     jQuery(function(){
        jQuery.getScript("/sites/all/themes/summerton/templates/calculator/howrichmaths.js", function(){
@@ -212,11 +211,11 @@ $results['richtimes'] = 24;
       jQuery('.knob.back').trigger('change');
   }
   function updatePotentialDisplay(){
-    var richFactorNum = richFactor(window.wealthCalculator.potentialIncome);
-    var richPercentageNum = richPercentage(window.wealthCalculator.potentialIncome);
-    jQuery("#netRichPercent").text(richPercentageNum.toFixed(1));
-    jQuery("#netRichTimes").text(richFactorNum.toFixed(1));
-    jQuery('.knob.front').val(100-richPercentageNum);
+    var richFactor = richFactor(window.wealthCalculator.potentialIncome);
+    var richPercentage(window.wealthCalculator.potentialIncome);
+    jQuery("#netRichPercent").text(richPercentage.toFixed(1));
+    jQuery("#netRichTimes").text(richFactor.toFixed(1));
+    jQuery('.knob.front').val(100-richPercentage);
     jQuery('.knob.front').trigger('change');
   }
   function fadeInBack(){
@@ -235,11 +234,4 @@ $results['richtimes'] = 24;
       if (i < 100-richPercentage(window.wealthCalculator.potentialIncome)) { i = i+1;} else {clearInterval(timer);}
       },10 );
   }
-  function drawEarth(){
-      var context = jQuery("canvas")[0].getContext('2d');
-      var earthImg = new Image();
-      earthImg.src = "/sites/all/themes/summerton/images/calculator/earth_west.jpg";
-      context.drawImage(earthImg, 25, 25, 250, 250);
-  }
-
 </script>

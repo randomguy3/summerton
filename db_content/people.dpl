@@ -8,27 +8,27 @@
     <div class="content-block">
       <h2 class="light">Funders and Supporters</h2>
       <p class="byline">Giving What We Can is extremely grateful for the donations, grants and encouragement provided by the following:</p>
-      <div class="inline container cell">
+      <div class="left container text">
         <img></img>
         <p class="caption"><span class="strong">Dr Frederick Mulder, CBE</span><br>
         Dr Mulder is a Canadian art-dealer and philanthropist living in the United Kingdom.<br>
         He founded the Funding Network, the UK's first public giving circle.</p>
       </div>
-      <div class="inline container">
+      <div class="left container text">
         <img></img>
         <p class="caption"><span class="strong">The Pears Foundation</span><br>
         The Pears Foundation is a British family foundation, rooted in Jewish values, whose work focuses on positive identity and citizenship.</p>
      </div>
-     <div class="inline container">
+     <div class="left container text">
        <img></img>
        <p class="caption"><span class="strong">Balliol College, Oxford</span><br>
        Balliol is one of the oldest Oxford colleges, with a strong philosophical tradtion and a history of radical though.</p>
      </div>
-     <div class="inline container">
+     <div class="left container text">
        <p class="caption"><span class="strong">Future of Humanity Institute, Oxford</span><br>
        The Future of Humanity Institute is the leading research center looking at big-picture questions for human civilization.</p>
     </div>
-    <div class="inline container">
+    <div class="left container text">
       <p class="caption"><span class="strong">The Oxford Uehiro Centre</span><br>
       The Oxford Uehiro Centre encourage and supports debate and deeper reflection on practical ethics.</p>
     </div>

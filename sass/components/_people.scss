@@ -30,4 +30,16 @@
     border:0;
     border-bottom:1px dashed #ccc;
   }
+  img {
+    border-width:20px;
+    border:solid;
+    border-radius:100%;
+    border-color:white;
+    box-shadow:0px 0px 1pt 1pt grey;
+    float:left;
+    margin-right:2%;
+    }
+    .small{
+      width:80%;
+    }
 }

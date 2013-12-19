@@ -6,14 +6,17 @@
   p.byline{
     font-size:1.5em;
   }
-  .row{
-    display:table;
-  }
-  .cell{
-    display:table-cell;
-  }
   .text{
   text-align:left;
-  width:20%;
+  width:18%;
+  margin-left:1%;
+  margin-right:1%;
+    .caption{
+      text-align:left;
+      width:100%;
+    }
+  }
+ .strong{
+    color:$brand-red-bg;
   }
 }

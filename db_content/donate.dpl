@@ -1,0 +1,69 @@
+<div class="donate">
+  <div class="wideblock even tcenter" id="donateimg"></div>
+  <div class="wideblock odd tcenter">
+    <div class="content-block">
+      <p><span class="bold">If you are looking to donate to our recommended charities: <a href="">Recommended Charities.</a></span><br>
+      <p>Although we primarily encourage our members and the public to donate to the charities we have found to be the most effective in helping the developing world, we do need funding ourselves in order to promote this message, and any donations would be appreciated.</p>
+    </div>
+    <h2 class="light">Our Impact</h2>
+    <div class="row">
+      <div class="container inline cell"><div class="circular" id ="CEAteam"></div>
+        <h3 class="verystrong">£100</h3>
+        <p class="caption">allows us to host a chapter-based event, spreading the word about effectiveness and encouraging donations to the best charities </p>
+        </br>
+      </div>
+      <div class="container inline cell"><div class="circular" id="CEAteamb"></div>
+        <h3 class="verystrong">£500</h3>
+        <p class="caption">allows us to run a week long volunteer programme, generating a range of broad charity investigations</p>
+        </br>
+      </div>
+      <div class="container inline cell"><div class="circular" id="waterkid"></div>
+        <h3 class="verystrong">£1000</h3>
+        <p class="caption">allows us to host a graduate volunteer to do a full month of research, potentially unveiling life-changing charities</p>
+        </br>
+      </div>
+      <div class="container inline cell"><div class="circular" id=""></div>
+        <h3 class="verystrong">£2500</h3>
+        <p class="caption">allows us to hire an extra full-time researcher of community-builder for a full year, generating many new members, just one of which would ensure a positive return on this donation</p>
+      </div>
+    </div>
+  </div>
+  <div class="wideblock even tcenter">
+    <div class="content-block">
+      <h2 class="light"> Bank Tansfer </h2>
+      <p> This is our preferred method of accepting donations for both monthly and one-time gifts</p>
+      <?php include path_to_theme()."/templates/donate/bank-transfer.php"?>
+      <hr class="stretch">
+      <div class="left container text left-half-container">
+        <h3>HOW TO DONATE - UNITED STATES TAXPAYERS</h3>
+        <p>For United States taxpayers only, if you wish to claim tax-deductibility, please donate through our fiscal sponsor, the Tides Foundation:</p>
+        <p>By cheque:<br>
+        Please address cheques to "Tides Foundation" but write "Centre for Effective Altruism" (our parent organisation) on the 'Memo' line.<br>
+        Send by postal mail to Tides Foundation, The Presidio, P.O. Box 29903, San Franciso, CA 94129 OR <br>
+        Send by FedEx or UPS to Tides Foundation, 1014 Torney Avenue, San Franciso, CA 94129.</p>
+        <p>By bank transfer:<br>
+        <p>Please email William MacAskill at will.macaskill@givingwhatwecan.org to set up a transfer.</p>
+      </div>
+      <div class="left container text right-half-container">
+        <h3>HOW TO DONATE - EVERYONE ELSE</h3>
+        <p>By cheque: <br>
+        Please address cheques to "Centre for Effective Altruism" (our parent organisation) but write "Giving What We can" on the back of the cheque.<br>
+        Send by post to Centre for Effective Altruism, Oxford Uehiro Centre for Practical Ethics, Littlegate House, St Ebbes Street, Oxford OX1 1PT, UK.<br>
+        We have tax-deductible status in the UK, so if you are a UK taxpayer and would like to claim gift aid, please email William MacAskill at will.macaskill@givingwhatwecan.org to let us know.</p>
+        <p>By bank transfer / credit card / direct debit:<br>
+        Please email William MacAskill at will.macaskill@givingwhatwecan.org to set up transfers.</p>
+      </div>
+      <hr class="stretch">
+      <div class="left container text left-half-container">
+        <h3>COST-EFFECTIVENESS</h3>
+        <p>Given the importance of cost-effectiveness to our mission, we have assessed the effectiveness of donations given to us. According to our best estimates, every $1 invested in Giving What We Can will generate something in the range of $25-$61 for the best charities. If you want to see our calculations, please email William MacAskill at will.macaskill@ginvingwhatwecan.org and we'll be happy to provide them.</p>
+        <p>Most of our current expenditure is on staff, as Giving What We can is beyond the size where it could be run well on a volunteer-only basis.</p>
+      </div>
+      <div class="left container text right-half-container">
+        <h3>CAN DONATING TO GWWC BE PART OF THE 10% PLEDGE?</h3>
+        <p>We do allow donations to Giving What We Can to be part of the 10% pledge, although members are in no way expected to donate to us, and we encourage those who do so to give to other charities as well.</p>
+      </div>
+    </div>
+  </div>
+</div>
+

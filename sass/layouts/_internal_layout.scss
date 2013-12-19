@@ -35,9 +35,19 @@ div .wideblock {
     padding: 10px 0px 10px 0;
 
 }
-
-
-
+.half-container{
+  width:40%;
+}
+.left-half-container{
+  @extend .half-container;
+  margin-left:8%;
+  margin-right:2%;
+}
+.right-half-container{
+  @extend .half-container;
+  margin-left:2%;  
+  margin-right:8%;
+}
 
 
 /* For modern browsers */
@@ -92,7 +102,10 @@ p.caption {
     text-align: center;
     height: 5em;
 }
-
+p.longcaption{
+  @extend p.caption;
+  width:100%;
+}
 
 .tcenter {
     text-align: center;

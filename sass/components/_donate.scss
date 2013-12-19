@@ -1,0 +1,31 @@
+div.donate {
+  a{
+     color:$brand-red-bg !important;
+    }
+  h2.light{
+     @extend a; 
+     font-weight:300;
+     margin-top: 0px;
+     margin-bottom: 0px;
+  }
+  .verystrong{
+    @extend a;
+    font-size:3em;
+    margin-bottom:0px;
+  }
+  .row{
+    display:table;
+    margin: 0 auto;
+    margin-bottom:5%;
+  }
+  .cell{
+  display:table-cell;
+  }
+  hr{
+    border:0;
+    border-bottom:1px dashed #ccc;
+  }
+  .text{
+    text-align:left;
+  }
+}

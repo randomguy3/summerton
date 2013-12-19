@@ -1,0 +1,36 @@
+<div class="people">
+    <div class="content-block tcenter">
+      <p>Our members come from all kinds of backgrounds and work in all kinds of jobs, but they are united by their commitment to eradicating poverty in the developing world. Read about some of their reasons for joining here. A full list of our members is available here. If you would like to talk to one of our members about being a part of Giving What We Can, please contact us</p>
+  </div>
+  <div class="wideblock odd">
+  </div>
+  <div class="wideblock even">
+    <div class="content-block">
+      <h2 class="light">Funders and Supporters</h2>
+      <p class="byline">Giving What We Can is extremely grateful for the donations, grants and encouragement provided by the following:</p>
+      <div class="inline container cell">
+        <img></img>
+        <p class="caption"><span class="strong">Dr Frederick Mulder, CBE</span><br>
+        Dr Mulder is a Canadian art-dealer and philanthropist living in the United Kingdom.<br>
+        He founded the Funding Network, the UK's first public giving circle.</p>
+      </div>
+      <div class="inline container">
+        <img></img>
+        <p class="caption"><span class="strong">The Pears Foundation</span><br>
+        The Pears Foundation is a British family foundation, rooted in Jewish values, whose work focuses on positive identity and citizenship.</p>
+     </div>
+     <div class="inline container">
+       <img></img>
+       <p class="caption"><span class="strong">Balliol College, Oxford</span><br>
+       Balliol is one of the oldest Oxford colleges, with a strong philosophical tradtion and a history of radical though.</p>
+     </div>
+     <div class="inline container">
+       <p class="caption"><span class="strong">Future of Humanity Institute, Oxford</span><br>
+       The Future of Humanity Institute is the leading research center looking at big-picture questions for human civilization.</p>
+    </div>
+    <div class="inline container">
+      <p class="caption"><span class="strong">The Oxford Uehiro Centre</span><br>
+      The Oxford Uehiro Centre encourage and supports debate and deeper reflection on practical ethics.</p>
+    </div>
+  </div>
+</div>

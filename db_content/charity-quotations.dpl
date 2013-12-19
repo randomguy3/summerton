@@ -1,0 +1,29 @@
+<div class="charity-quotations">
+  <div class="tcenter">
+    <h2 class="light">Charity Quotations</h2>
+    <p> Many people have spoken eloquently on the topic of charity or aid. Here is a collection of quotes, ranging from the the conservative to the radical. We hope you find them challenging and interesting.</p>
+    <hr>
+  </div>
+  <div class="text">
+    <p class="strong">Religious Quotations about Charity</p>
+    <p>Tithing is the religious tradition of putting one's charitable nature into practice by giving a proportion of your income to charity. Find out more about tithing and donating a proportion of your income to charity.</p>
+  </div>
+  <div class="wideblock">
+    <button class="red">Read our pledge</button>
+  </div>
+  <hr>
+  <div class="text">
+  <p class="strong">Philosophical Quotations about Charity</p>
+  <p>Choosing to donate your money to charity is a laudable decision. It's important to give to charities that do the most good with their money. For more info on how to save thousands of lives, read our page on where to give.</p>
+  </div>
+  <div class="wideblock">
+    <button class="red">Where to give</button>
+  </div>
+  <hr>
+  <div class="text">
+  <p class="strong">Humanitarian Quotations about Charity</p>
+  <p>Extreme poverty is one of the most pressing issues of our age. It is the source of much of the world's suffering and makes mere survival into a struggle. Find out more about the problem we face here.</p>
+  <div class="wideblock">
+    <button class="red">The problem</button>
+  </div>
+</div>

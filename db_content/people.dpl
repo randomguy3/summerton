@@ -9,18 +9,18 @@
       <h2 class="light">Funders and Supporters</h2>
       <p class="byline">Giving What We Can is extremely grateful for the donations, grants and encouragement provided by the following:</p>
       <div class="left container text">
-        <img></img>
+        <img class="circle"></img>
         <p class="caption"><span class="strong">Dr Frederick Mulder, CBE</span><br>
         Dr Mulder is a Canadian art-dealer and philanthropist living in the United Kingdom.<br>
         He founded the Funding Network, the UK's first public giving circle.</p>
       </div>
       <div class="left container text">
-        <img></img>
+        <img class="circle"></img>
         <p class="caption"><span class="strong">The Pears Foundation</span><br>
         The Pears Foundation is a British family foundation, rooted in Jewish values, whose work focuses on positive identity and citizenship.</p>
      </div>
      <div class="left container text">
-       <img></img>
+       <img class="circle"></img>
        <p class="caption"><span class="strong">Balliol College, Oxford</span><br>
        Balliol is one of the oldest Oxford colleges, with a strong philosophical tradtion and a history of radical though.</p>
      </div>
@@ -39,80 +39,80 @@
   <hr>
     <h2 class="light">The Team</h2>
     <p class="byline">Giving What We Can could not function without the hard work of its staff, ably assisted by a team of volunteers. If you are interested in working for us, a list of our vacancies is here.</p>
-    <div>
-      <div>
+    <div class="container">
+      <div class="container left image inline">
         <img class="circle" src="/sites/all/themes/summerton/images/people/Michelle.jpg"></img>
       </div>
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p><span class="title">Executive Director - Michelle Hutchinson</span><br>
         Michelle sets the strategy for Giving What We Can ad coordinates team members and evaluates progress in line with that. She studied Physics and Philosophy, and is finishing a PhD in moral philosophy at Oxford University. She loves dancing and playing Articulate with freinds.</p>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="container">
+      <div class="left inline image container">
         <img class="circle" src="/sites/all/themes/summerton/images/people/Andreas.jpg"></img>
       </div>
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p><span class="title">Assistant Director - Andreas Mogensen</span><br>
         <p>Andreas is Assistant Director of Giving What We Can, which means he needs to be good at everything. He writes copy for the website, fundraising documents and research papers. He helps set strategy an monitoring and evaluating GWWC's progress. He is completing a DPhil in philosopy and is a fellow of All Sould College, Oxford. He enjoys speculative fiction, Chinese food, and silent movies. He has a beard.</p>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="container">
+      <div class="container left inline image">
         <img class="circle" src="/sites/all/themes/summerton/images/people/Toby.jpg"></img>
       </div>
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p><span class="title">President - Toby Ord</span><br>
         <p>Toby is the Founder and President of Giving What We Can. He represents Giving What We Can in the media, and provides advice to bodies such as the World Health Organisation, World Bank and the Prime Minister's Office. He is a Research Fellow in Ethics at the University of Oxford. He once made a spherical chess board.</p>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="container">
+      <div class="left inline image container">
         <img class="circle" src="/sites/all/themes/summerton/images/people/Will.jpg"></img>
       </div>
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p><span class="title">Vice President - William MacAskill</span><br>
         <p>Will is the Vice President of Giving What We Can, and the Active Trustee of the charity of which GWWC is part. He provides strategic advice and guidance. He studied Philosophy at Cambridge and Princeton, and is a Research Associate at the Uehiro Centre for Practical Ethics. He thinks basketball is the best thing in the world ever. Except water polo.</p>
       </div>
     </div>
- <div class="span">
-      <div>
+ <div class="container">
+      <div class="left inline image container">
         <img class="circle" src="/sites/all/themes/summerton/images/people/Steph.jpg"></img>
       </div>
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p><span class="title">Director of Communications - Steph Crampin</span><br>
         <p>Stepg manages Giving What We Can's outreach efforts, including events, publicity and media outreach. She graduated from a Maths and Philosophy degree at Oxford in September 2013, and enjoys running and rowing in her spare time.</p>
       </div>
     </div>
-  <div>
-      <div>
+  <div class="container">
+      <div class="left inline image container">
         <img class="circle" src="/sites/all/themes/summerton/images/people/Ben.jpg"></img>
       </div>
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p><span class="title">Director of Community - Ben Clifford</span><br>
         <p>Ben's role is to strengthen and grow the Giving What We Can community. He's a Philosophy graduate from the University of Warwick, where he founded the Warwick chapter. In his spare time he enjoys writing and playing music, attempting to cook Indian food and playing board games</p>
       </div>
     </div>
- <div>
-      <div>
+ <div class="container">
+      <div class="left inline image container">
         <img class="circle" src="/sites/all/themes/summerton/images/people/Rob.jpg"></img>
       </div>
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p><span class="title">Director of Research - Robert Wiblin</span><br>
         <p>Robert studied Economics and Genetics at ANU, topping his year in Applied Economics. He then worked in the Australian Department of Innovation, the Treasury, and the Productivity Commission, before becoming Research Director of Giving What We Can. He enjoys sleeping when he can.</p>
       </div>
     </div>
- <div>
-      <div>
+ <div class="container">
+      <div class="left inline image container">
         <img class="circle" src="/sites/all/themes/summerton/images/people/Tom.jpg"></img>
       </div>
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p><span class="title">Director of Operations - Tom Ash</span><br>
         <p>Tom handles the basic financial and legal requirements necessary for Giving What We Can's existence as a charity. He studied philosophy at Cambridge and Oxford, after which he spent several years working for non-profits including openDemocracy and the New Internationalist. He enjoys pretentious movies and social games.</p>
       </div>
     </div>
     <div class="span">
-      <div class="left inline small">
+      <div class="left inline widecolumn">
         <p class="title">Legal and Financial Manager - Evie Atkinson<br>
         Blog Manager - Krisztina Csortea<br>
         Webmaster - Jacob Hilton<br>
@@ -121,4 +121,5 @@
     </div>
   </div>
 </div>
+
 

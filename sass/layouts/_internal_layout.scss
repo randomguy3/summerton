@@ -97,6 +97,16 @@ div.circular {
     border-style:solid;
 }
 
+div.widecolumn{
+  width:78%;
+}
+div.halfcolumn{
+  width:48%;
+}
+div.thincolumn{
+  width:18%;
+}
+
 p.caption {
     width:$radius;
     text-align: center;

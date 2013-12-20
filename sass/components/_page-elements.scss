@@ -26,3 +26,10 @@ div.bordergrey {
 div.button.content-block{
   margin-top:1.5%;
 }
+img.circle{
+    border-width:20px;
+    border:solid;
+    border-radius:100%;
+    border-color:white;
+    box-shadow:0px 0px 1pt 1pt grey;
+}

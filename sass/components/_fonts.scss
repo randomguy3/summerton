@@ -122,14 +122,36 @@ select {
         border-color: $gwwclightgrey;
 }
 
-
-p.page-leader {
-  font-size: $leader-font-size;
-  @include leader(1, $leader-font-size);
-  @include trailer(1, $leader-font-size);
-  color: $brand-dark-grey-fg;
-  text-align: center;
-  font-weight: 300;
+p{
+  .page-leader {
+    font-size: $leader-font-size;
+    @include leader(1, $leader-font-size);
+    @include trailer(1, $leader-font-size);
+    color: $brand-dark-grey-fg;
+    text-align: center;
+    font-weight: 300;
+  }
+  .byline{
+    font-size:1.5em;
+    margin:1em 0;
+  }
+  .title{
+    color:$brand-red-bg;
+  }
+}
+p.title{
+  color:$brand-red-bg;
+}
+.strong{
+  color:black;
+  font-weight:bold;
+}
+h2.light{
+  font-weight:300;
+}
+hr{
+  border:0;
+  border-bottom:1px dashed #ccc;
 }
 
 
